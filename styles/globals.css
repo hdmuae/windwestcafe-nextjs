@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: nexa;
+}
+@font-face {
+  font-family: "berlin-sans-fb";
+  src: url("../public/fonts/Berlin-Sans-FB.ttf");
+}
+
+@font-face {
+  font-family: "nexa";
+  font-weight: 300;
+  src: url("../public/fonts/Nexa-Light.otf");
+}
+
+@font-face {
+  font-family: "nexa";
+  font-weight: 700;
+  src: url("../public/fonts/Nexa-Bold.otf");
+}
+
+.parent {
+  width: 400px;
+  height: 400px;
+  background-color: black;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  transition: transform 1s ease-in;
+}
+
+.parent:hover .child {
+  animation: left-to-right 1s ease-in forwards;
+}
+
+@keyframes left-to-right {
+  33% {
+    transform: translateX(300%) translateY(300%);
+  }
+
+  66% {
+    transform: translateY(300%);
+  }
+
+  100% {
+    transform: translateX(300%);
+  }
+}
