@@ -13,10 +13,6 @@ const Home: NextPage = () => {
       <Shop />
       <Gallery />
       <ContactUs />
-
-      {/* <div className="parent">
-        <div className="child"></div>
-      </div> */}
     </>
   );
 };

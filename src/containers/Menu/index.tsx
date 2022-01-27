@@ -3,9 +3,12 @@ import MenuTable from "../../components/MenuTable";
 
 const Menu: React.FC = () => {
   return (
-    <section className="bg-lightbrown py-24">
+    <section
+      id="menu"
+      className="bg-gradient-to-b from-darkblue to-primary py-32"
+    >
       <div className="max-w-default m-auto">
-        <h1 className="text-center text-4xl text-primary font-berlin mb-8">
+        <h1 className="lg:text-title text-3xl text-center text-white mb-8">
           Our Menu
         </h1>
         <MenuTable />

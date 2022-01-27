@@ -2,22 +2,34 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      height: {
-        card: "28rem",
-      },
       maxWidth: {
         default: "1366px",
       },
-      fontFamily: {
-        berlin: "berlin-sans-fb",
-        nexa: "nexa",
+      fontSize: {
+        title: "40px;",
+      },
+      borderRadius: {
+        full: "53px",
+      },
+      width: {
+        28: "27%",
+        400: "600px",
+      },
+      height: {
+        card: "357px",
+        cardfull: "550px",
+        60: "60%",
       },
       colors: {
-        primary: "#362B1A",
+        primary: "#253871",
         secondary: "#B8AEA4",
-        lightbrown: "#EEECE8",
-        darkbrown: "#89724B",
-        contact: "#DBD8D2",
+        darkblue: "#010101",
+      },
+      translate: {
+        4: "-4rem",
+      },
+      screens: {
+        ground: "0px",
       },
     },
   },

@@ -2,27 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+  /* scroll-snap-type: y proximity; */
+  scroll-padding: 40px;
+}
+
 body {
-  font-family: nexa;
-}
-@font-face {
-  font-family: "berlin-sans-fb";
-  src: url("../public/fonts/Berlin-Sans-FB.ttf");
-}
-
-@font-face {
-  font-family: "nexa";
+  font-family: minion-variable-concept;
   font-weight: 300;
-  src: url("../public/fonts/Nexa-Light.otf");
+}
+
+section {
+  /* height: 100vh; */
+  scroll-snap-align: start;
 }
 
 @font-face {
-  font-family: "nexa";
-  font-weight: 700;
-  src: url("../public/fonts/Nexa-Bold.otf");
+  font-family: "minion-variable-concept";
+  src: url("../public/fonts/Minion-Variable-Concept.otf");
 }
 
-.parent {
+/* .parent {
   width: 400px;
   height: 400px;
   background-color: black;
@@ -51,4 +52,4 @@ body {
   100% {
     transform: translateX(300%);
   }
-}
+} */

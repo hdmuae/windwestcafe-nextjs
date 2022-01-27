@@ -1,53 +1,140 @@
 import * as React from "react";
-import Logo from "../../../public/images/Logovertical.svg";
-import Facebook from "../../../public/images/Facebook.svg";
-import Instagram from "../../../public/images/Instagram.svg";
-import Twitter from "../../../public/images/Twitter.svg";
-import Tripadvisor from "../../../public/images/Tripadvisor.svg";
 import Image from "next/image";
 
 const Footer: React.FC = () => {
   return (
     <footer>
-      <div className="bg-darkbrown py-12">
-        <div className="max-w-default  m-auto flex justify-between">
+      <div className="w-4/5 m-auto py-12 lg:block hidden">
+        <div className="max-w-default m-auto flex justify-between text-primary">
           <div>
-            <Image src={Logo} alt="Wind West Cafe Logo" />
+            <Image
+              src="/svg/bluelogo.svg"
+              width="150px"
+              height="150px"
+              alt="Wind West Cafe Logo"
+            />
           </div>
-          <div>
-            <h3 className="text-white font-berlin mb-3">Know Wind West Cafe</h3>
-            <p className="text-white">About Us</p>
-            <p className="text-white">Our Menu</p>
-            <p className="text-white">Shop Dersut</p>
+          <div className="flex flex-col">
+            <h3 className="text-lg font-bold mb-3">Know Wind West Cafe</h3>
+            <a className=" hover:font-bold pb-2">About Us</a>
+            <a className="hover:font-bold pb-2">Our Menu</a>
+            <a className="hover:font-bold">Shop Dersut</a>
+          </div>
+
+          <div className="flex flex-col">
+            <h3 className="text-lg font-bold mb-3">More Information</h3>
+            <a className="hover:font-bold pb-2">Contact</a>
+            <a className="hover:font-bold">Terms and Conditions</a>
+          </div>
+
+          <div className="flex flex-col">
+            <h3 className="text-lg font-bold mb-3">Contact Information</h3>
+            <a className="hover:font-bold pb-2">+123 4 567 890</a>
+            <a className="hover:font-bold pb-2">+123 4 567 890</a>
+            <a className="hover:font-bold pb-2">info@mail.com</a>
+            <a className="hover:font-bold">Address - Dubai - UAE</a>
           </div>
 
           <div>
-            <h3 className="text-white font-berlin mb-3">More Information</h3>
-            <p className="text-white">Contact</p>
-            <p className="text-white">Terms and Conditions</p>
-          </div>
-
-          <div>
-            <h3 className="text-white font-berlin mb-3">Contact Information</h3>
-            <p className="text-white">+123 4 567 890</p>
-            <p className="text-white">+123 4 567 890</p>
-            <p className="text-white">info@mail.com</p>
-            <p className="text-white">Address - Dubai - UAE</p>
-          </div>
-
-          <div>
-            <h3 className="text-white font-berlin mb-3">Social Media</h3>
+            <h3 className="text-lg font-bold mb-3">Social Media</h3>
             <div className="flex justify-between">
-              <Image src={Facebook} alt="Facebook icon" />
-              <Image src={Twitter} alt="Twitter icon" />
-              <Image src={Instagram} alt="Instagram icon" />
-              <Image src={Tripadvisor} alt="Tripadvisor icon" />
+              <Image
+                className="cursor-pointer"
+                width="15"
+                height="15"
+                src="/svg/Facebook.svg"
+                alt="Facebook icon"
+              />
+              <Image
+                width="15"
+                height="15"
+                className="cursor-pointer"
+                src="/svg/Twitter.svg"
+                alt="Twitter icon"
+              />
+              <Image
+                width="15"
+                height="15"
+                className="cursor-pointer"
+                src="/svg/Instagram.svg"
+                alt="Instagram icon"
+              />
+              <Image
+                width="18"
+                height="18"
+                className="cursor-pointer"
+                src="/svg/Tripadvisor.svg"
+                alt="Tripadvisor icon"
+              />
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-lightbrown">
-        <p className="text-center text-primary font-berlin py-4">
+
+      <div className="flex flex-col justify-center items-center lg:hidden my-6 text-primary">
+        <div>
+          <Image
+            src="/svg/logo-horizontal.svg"
+            width="200px"
+            height="120px"
+            alt="Wind West Cafe Logo"
+          />
+        </div>
+
+        <div className="w-full flex justify-around mb-6">
+          <div className="flex flex-col">
+            <h3 className="text-lg font-bold mb-3">Know Wind West Cafe</h3>
+            <a className="hover:font-bold pb-2">About Us</a>
+            <a className="hover:font-bold pb-2">Our Menu</a>
+            <a className="hover:font-bold pb-2">Shop Dersut</a>
+            <a className="hover:font-bold pb-2">Contact</a>
+            <a className="hover:font-bold">Terms and Conditions</a>
+          </div>
+
+          <div className="flex flex-col">
+            <h3 className="text-lg font-bold mb-3">Contact Information</h3>
+            <a className="hover:font-bold pb-2">+123 4 567 890</a>
+            <a className="hover:font-bold pb-2">+123 4 567 890</a>
+            <a className="hover:font-bold pb-2">info@mail.com</a>
+            <a className="hover:font-bold pb-2">Address - Street Name</a>
+            <a className="hover:font-bold">Dubai - UAE</a>
+          </div>
+        </div>
+
+        <div className="w-1/2 flex justify-between">
+          <Image
+            className="cursor-pointer"
+            width="15"
+            height="15"
+            src="/svg/Facebook.svg"
+            alt="Facebook icon"
+          />
+          <Image
+            width="20"
+            height="20"
+            className="cursor-pointer"
+            src="/svg/Twitter.svg"
+            alt="Twitter icon"
+          />
+          <Image
+            width="18"
+            height="18"
+            className="cursor-pointer"
+            src="/svg/Instagram.svg"
+            alt="Instagram icon"
+          />
+          <Image
+            width="20"
+            height="20"
+            className="cursor-pointer"
+            src="/svg/Tripadvisor.svg"
+            alt="Tripadvisor icon"
+          />
+        </div>
+      </div>
+
+      <div className="bg-primary">
+        <p className="text-base text-center text-white py-4">
           © 2022 Wind West Cafe. All rights reserved
         </p>
       </div>
