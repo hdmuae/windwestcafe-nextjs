@@ -12,6 +12,7 @@ const styles: React.CSSProperties = {
   right: 0,
   bottom: 0,
   zIndex: 10,
+  width: "100%",
   objectFit: "cover",
   position: "absolute",
 };

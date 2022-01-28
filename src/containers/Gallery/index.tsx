@@ -16,6 +16,7 @@ const Gallery: React.FC = () => {
         <div>
           <Swiper
             // effect={"coverflow"}
+            initialSlide={1}
             grabCursor={true}
             centeredSlides={true}
             slidesPerView={3}
@@ -29,48 +30,78 @@ const Gallery: React.FC = () => {
             }}
             pagination={true}
             className="mySwiper"
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+            }}
           >
             <SwiperSlide>
-              <img
-                className="rounded-full"
+              <Image
+                width="400px"
+                height="300px"
+                className="h-60 w-full rounded-full"
                 src="https://swiperjs.com/demos/images/nature-2.jpg"
                 alt="img"
               />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                className="rounded-full w-400 z-10 absolute"
+              <Image
+                width="400px"
+                height="300px"
+                className="h-60 w-full rounded-full"
                 src="https://swiperjs.com/demos/images/nature-3.jpg"
+                alt="img"
               />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                className="rounded-full"
+              <Image
+                width="400px"
+                height="300px"
+                className="h-60 w-full rounded-full"
                 src="https://swiperjs.com/demos/images/nature-4.jpg"
+                alt="img"
               />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                className="rounded-full"
+              <Image
+                width="400px"
+                height="300px"
+                className="h-60 w-full rounded-full"
                 src="https://swiperjs.com/demos/images/nature-5.jpg"
+                alt="img"
               />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                className="rounded-full"
+              <Image
+                width="400px"
+                height="300px"
+                className="h-60 w-full rounded-full"
                 src="https://swiperjs.com/demos/images/nature-6.jpg"
+                alt="img"
               />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                className="rounded-full"
+              <Image
+                width="400px"
+                height="300px"
+                className="h-60 w-full rounded-full"
                 src="https://swiperjs.com/demos/images/nature-7.jpg"
+                alt="img"
               />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                className="rounded-full"
+              <Image
+                width="400px"
+                height="300px"
+                className="h-60 w-full rounded-full"
                 src="https://swiperjs.com/demos/images/nature-8.jpg"
+                alt="img"
               />
             </SwiperSlide>
           </Swiper>

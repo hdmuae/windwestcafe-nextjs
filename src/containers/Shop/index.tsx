@@ -1,5 +1,4 @@
 import * as React from "react";
-import Image from "next/image";
 import Card from "../../components/Card";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination } from "swiper";
@@ -31,14 +30,28 @@ const Shop: React.FC = () => {
 
         <Swiper
           style={{ overflow: "visible" }}
+          initialSlide={1}
           slidesPerView={3}
           spaceBetween={20}
-          // centeredSlides={true}
-          // slideVisibleClass={true}
+          centeredSlides={true}
           pagination={{
             clickable: true,
           }}
-          className="mySwiper relative overflow-visible overflow-y-visible mb-20"
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+          }}
+          className="mySwiper mb-20"
         >
           <SwiperSlide>
             <Card
@@ -107,10 +120,6 @@ const Shop: React.FC = () => {
             img="/images/product3.png"
           /> */}
         </div>
-
-        {/* <div className="bg-red-100 h-40 w-40 relative">
-          <div className="bg-yellow-400 h-20 w-20 absolute -top-10"> </div>
-        </div> */}
       </div>
     </section>
   );
