@@ -23,7 +23,7 @@ const MapComponent = () => {
         defaultCenter={center}
         defaultZoom={14}
       >
-        <AnyReactComponent lat={59.955413} lng={30.337844} text="My Marker" />
+        <AnyReactComponent text="My Marker" />
       </GoogleMapReact>
     </div>
   );

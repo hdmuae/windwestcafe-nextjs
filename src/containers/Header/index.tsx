@@ -45,6 +45,7 @@ const Header: React.FC = () => {
   return (
     <section
       id="header"
+      // @ts-ignore
       ref={containerRef}
       className={`"text-white h-screen -z-10 ${
         menu ? "bg-primary fade-in-out duration-700" : "bg-darkblue"
