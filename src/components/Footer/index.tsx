@@ -15,28 +15,38 @@ const Footer: React.FC = () => {
             />
           </div>
           <div className="flex flex-col">
-            <h3 className="text-lg font-bold mb-3">Know Wind West Cafe</h3>
-            <a className=" hover:font-bold pb-2">About Us</a>
-            <a className="hover:font-bold pb-2">Our Menu</a>
-            <a className="hover:font-bold">Shop Dersut</a>
+            <h1 className="text-lg font-bold mb-3">Know Wind West Cafe</h1>
+            <a href="#about" className="hover:font-bold pb-2">
+              About Us
+            </a>
+            <a href="#menu" className="hover:font-bold pb-2">
+              Our Menu
+            </a>
+            <a href="#shop" className="hover:font-bold">
+              Shop Dersut
+            </a>
           </div>
 
           <div className="flex flex-col">
-            <h3 className="text-lg font-bold mb-3">More Information</h3>
-            <a className="hover:font-bold pb-2">Contact</a>
-            <a className="hover:font-bold">Terms and Conditions</a>
+            <h1 className="text-lg font-bold mb-3">More Information</h1>
+            <a href="#contact" className="hover:font-bold pb-2">
+              Contact
+            </a>
+            <a href="#" className="hover:font-bold">
+              Terms and Conditions
+            </a>
           </div>
 
           <div className="flex flex-col">
-            <h3 className="text-lg font-bold mb-3">Contact Information</h3>
-            <a className="hover:font-bold pb-2">+123 4 567 890</a>
-            <a className="hover:font-bold pb-2">+123 4 567 890</a>
-            <a className="hover:font-bold pb-2">info@mail.com</a>
-            <a className="hover:font-bold">Address - Dubai - UAE</a>
+            <h1 className="text-lg font-bold mb-3">Contact Information</h1>
+            <p className="hover:font-bold pb-2">+123 4 567 890</p>
+            <p className="hover:font-bold pb-2">+123 4 567 890</p>
+            <p className="hover:font-bold pb-2">info@mail.com</p>
+            <p className="hover:font-bold">Address - Dubai - UAE</p>
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-3">Social Media</h3>
+            <h1 className="text-lg font-bold mb-3">Social Media</h1>
             <div className="flex justify-between">
               <Image
                 className="cursor-pointer"
@@ -84,20 +94,30 @@ const Footer: React.FC = () => {
         <div className="w-full flex justify-around mb-6">
           <div className="flex flex-col">
             <h3 className="text-lg font-bold mb-3">Know Wind West Cafe</h3>
-            <a className="hover:font-bold pb-2">About Us</a>
-            <a className="hover:font-bold pb-2">Our Menu</a>
-            <a className="hover:font-bold pb-2">Shop Dersut</a>
-            <a className="hover:font-bold pb-2">Contact</a>
-            <a className="hover:font-bold">Terms and Conditions</a>
+            <a href="#about" className="hover:font-bold pb-2">
+              About Us
+            </a>
+            <a href="#menu" className="hover:font-bold pb-2">
+              Our Menu
+            </a>
+            <a href="#shop" className="hover:font-bold pb-2">
+              Shop Dersut
+            </a>
+            <a href="#contact" className="hover:font-bold pb-2">
+              Contact
+            </a>
+            <a href="#" className="hover:font-bold">
+              Terms and Conditions
+            </a>
           </div>
 
           <div className="flex flex-col">
             <h3 className="text-lg font-bold mb-3">Contact Information</h3>
-            <a className="hover:font-bold pb-2">+123 4 567 890</a>
-            <a className="hover:font-bold pb-2">+123 4 567 890</a>
-            <a className="hover:font-bold pb-2">info@mail.com</a>
-            <a className="hover:font-bold pb-2">Address - Street Name</a>
-            <a className="hover:font-bold">Dubai - UAE</a>
+            <p className="hover:font-bold pb-2">+123 4 567 890</p>
+            <p className="hover:font-bold pb-2">+123 4 567 890</p>
+            <p className="hover:font-bold pb-2">info@mail.com</p>
+            <p className="hover:font-bold pb-2">Address - Street Name</p>
+            <p className="hover:font-bold">Dubai - UAE</p>
           </div>
         </div>
 

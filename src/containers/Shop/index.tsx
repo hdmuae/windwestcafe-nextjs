@@ -23,7 +23,10 @@ const Shop: React.FC = () => {
         </p>
 
         <div className="flex justify-center mb-32">
-          <button className="m-auto bg-white text-primary font-bold rounded p-2">
+          <button
+            aria-label="shop now"
+            className="m-auto bg-white text-primary font-bold rounded p-2"
+          >
             SHOP NOW
           </button>
         </div>

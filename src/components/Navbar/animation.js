@@ -9,7 +9,7 @@ const Options = {
 
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
-    console.log(entry.target);
+    // console.log(entry.target);
   });
 }, Options);
 
