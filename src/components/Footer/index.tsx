@@ -1,24 +1,28 @@
 import * as React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import Facebook from "../../../public/svg/Facebook-white.svg";
+import Instagram from "../../../public/svg/Instagram-white.svg";
+import Tripadvisor from "../../../public/svg/Tripadvisor-white.svg";
 
 const Footer: React.FC = () => {
   return (
     <footer>
       <div className="w-4/5 m-auto py-12 lg:block hidden">
         <div className="max-w-default m-auto flex justify-between text-primary">
-          <div>
+          <a href="#">
             <Image
               src="/svg/bluelogo.svg"
               width="150px"
               height="150px"
               alt="Wind West Cafe Logo"
             />
-          </div>
+          </a>
           <div className="flex flex-col">
             <h1 className="text-lg font-bold mb-3">Know Wind West Cafe</h1>
-            <a href="#about" className="hover:font-bold pb-2">
-              About Us
-            </a>
+            <Link href="/">
+              <a className="hover:font-bold pb-2">About Us</a>
+            </Link>
             <a href="#menu" className="hover:font-bold pb-2">
               Our Menu
             </a>
@@ -32,7 +36,7 @@ const Footer: React.FC = () => {
             <a href="#contact" className="hover:font-bold pb-2">
               Contact
             </a>
-            <a href="#" className="hover:font-bold">
+            <a href="/termsandconditions" className="hover:font-bold">
               Terms and Conditions
             </a>
           </div>
@@ -55,13 +59,7 @@ const Footer: React.FC = () => {
                 src="/svg/Facebook.svg"
                 alt="Facebook icon"
               />
-              <Image
-                width="15"
-                height="15"
-                className="cursor-pointer"
-                src="/svg/Twitter.svg"
-                alt="Twitter icon"
-              />
+
               <Image
                 width="15"
                 height="15"
@@ -70,8 +68,8 @@ const Footer: React.FC = () => {
                 alt="Instagram icon"
               />
               <Image
-                width="18"
-                height="18"
+                width="20"
+                height="20"
                 className="cursor-pointer"
                 src="/svg/Tripadvisor.svg"
                 alt="Tripadvisor icon"
@@ -121,35 +119,28 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="w-1/2 flex justify-between">
-          <Image
-            className="cursor-pointer"
-            width="15"
-            height="15"
-            src="/svg/Facebook.svg"
-            alt="Facebook icon"
-          />
-          <Image
-            width="20"
-            height="20"
-            className="cursor-pointer"
-            src="/svg/Twitter.svg"
-            alt="Twitter icon"
-          />
-          <Image
-            width="18"
-            height="18"
-            className="cursor-pointer"
-            src="/svg/Instagram.svg"
-            alt="Instagram icon"
-          />
-          <Image
-            width="20"
-            height="20"
-            className="cursor-pointer"
-            src="/svg/Tripadvisor.svg"
-            alt="Tripadvisor icon"
-          />
+        <div className="w-full flex justify-between">
+          <a>
+            <Image
+              className="cursor-pointer"
+              src={Facebook}
+              alt="Facebook icon"
+            />
+          </a>
+          <a>
+            <Image
+              className="cursor-pointer"
+              src={Instagram}
+              alt="Instagram icon"
+            />
+          </a>
+          <a>
+            <Image
+              className="cursor-pointer"
+              src={Tripadvisor}
+              alt="Tripadvisor icon"
+            />
+          </a>
         </div>
       </div>
 

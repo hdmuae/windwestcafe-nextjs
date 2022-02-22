@@ -2,7 +2,6 @@ import * as React from "react";
 import Navbar from "../../components/Navbar";
 import Facebook from "../../../public/svg/Facebook-white.svg";
 import Instagram from "../../../public/svg/Instagram-white.svg";
-import Twitter from "../../../public/svg/Twitter-white.svg";
 import Tripadvisor from "../../../public/svg/Tripadvisor-white.svg";
 import Image from "next/image";
 
@@ -67,15 +66,14 @@ const Header: React.FC = () => {
       <div className="max-w-default w-4/5 md:w-3/5 lg:w-1/2 h-full m-auto flex flex-col justify-around">
         <div className={`align-center z-20 ${menu ? "hidden" : ""}`}>
           <h1 className="font-medium text-center text-white lg:text-title text-3xl lg:mb-12 mb-4">
-            About Us
+            Welcome to the Wind West Cafe!
           </h1>
 
           <p className="font-light text-center text-white mb-4">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-            consequat.
+            The west wind has brought real inspiration from those lands where
+            the long-lasting coffee culture soars, saturated with history,
+            heritage and inspiration. From where it all began and what we want
+            to convey to the city dwellers.
           </p>
 
           <p
@@ -83,15 +81,21 @@ const Header: React.FC = () => {
               visibility ? "" : "lg:block hidden"
             }`}
           >
-            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-            molestie consequat, vel illum dolore eu feugiat nulla facilisis at
-            vero eros et accumsan et iusto odio dignissim qui blandit praesent
-            luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-            consequat.
+            We have created a clear space for your imagination and inspiration
+            in pure minimalistic design, with secret details that distinguish
+            our brand. Our coffee made the astonishing trip to satisfy you and
+            make your life better because you are worthy to drink the delicious
+            coffee. We chose first-class quality coffee beans — Dersut,
+            originally from the picturesque city of Conegliano, Treviso, Italy.
+            Many varieties are even Espresso Italiano certified and have won at
+            least one Gold Medal at the International Coffee Tasting, Dersut
+            also became a member of SCA (Speciality Coffee Association), a world
+            association that promotes quality coffee culture and specialty
+            coffees. We are the first coffee shop in Dubai where you can try
+            Dersut espresso and other traditional Italian coffee drinks in
+            company with your favorite desserts and handmade chocolate. Moreover
+            we are official distributor of Dersut in UAE, the selection of
+            products you can find in our Shop.
           </p>
           <div className="flex justify-center">
             <button
@@ -129,11 +133,6 @@ const Header: React.FC = () => {
               className="cursor-pointer"
               src={Facebook}
               alt="Facebook icon"
-            />
-            <Image
-              className="cursor-pointer"
-              src={Twitter}
-              alt="Twitter icon"
             />
             <Image
               className="cursor-pointer"

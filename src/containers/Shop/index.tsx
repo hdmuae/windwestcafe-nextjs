@@ -14,12 +14,9 @@ const Shop: React.FC = () => {
           Shop Dersut
         </h1>
         <p className="m-auto w-4/5 md:w-3/5 lg:w-1/2 text-white text-center text-base mb-8">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          dignissim vel turpis a efficitur. Nam egestas at tellus eget auctor.
-          Orci varius natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Interdum et malesuada fames ac ante ipsum
-          primis in faucibus. Praesent ultrices, odio sed tincidunt elementum,
-          nisi arcu suscipit velit, at vehicula metus
+          We have had a passion for quality coffee and offering you an
+          outstanding coffee experience: gourmet and tasty coffees prepared by
+          our expert baristas with top quality Dersut coffee beans.
         </p>
 
         <div className="flex justify-center mb-32">

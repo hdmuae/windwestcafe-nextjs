@@ -12,7 +12,9 @@ const Gallery: React.FC = () => {
   return (
     <section id="gallery" className="bg-primary py-32">
       <div className="max-w-default m-auto">
-        <h1 className="text-center text-title text-white  mb-8">Gallery</h1>
+        <h1 className="text-center text-title text-white lg:mb-12 mb-8">
+          Gallery
+        </h1>
         <div>
           <Swiper
             // effect={"coverflow"}
@@ -44,7 +46,7 @@ const Gallery: React.FC = () => {
             <SwiperSlide>
               <Image
                 width="400px"
-                height="300px"
+                height="400px"
                 className="h-60 w-full rounded-full"
                 src="https://swiperjs.com/demos/images/nature-2.jpg"
                 alt="img"
@@ -53,7 +55,7 @@ const Gallery: React.FC = () => {
             <SwiperSlide>
               <Image
                 width="400px"
-                height="300px"
+                height="400px"
                 className="h-60 w-full rounded-full"
                 src="https://swiperjs.com/demos/images/nature-3.jpg"
                 alt="img"
@@ -62,7 +64,7 @@ const Gallery: React.FC = () => {
             <SwiperSlide>
               <Image
                 width="400px"
-                height="300px"
+                height="400px"
                 className="h-60 w-full rounded-full"
                 src="https://swiperjs.com/demos/images/nature-4.jpg"
                 alt="img"
@@ -71,7 +73,7 @@ const Gallery: React.FC = () => {
             <SwiperSlide>
               <Image
                 width="400px"
-                height="300px"
+                height="400px"
                 className="h-60 w-full rounded-full"
                 src="https://swiperjs.com/demos/images/nature-5.jpg"
                 alt="img"
@@ -80,7 +82,7 @@ const Gallery: React.FC = () => {
             <SwiperSlide>
               <Image
                 width="400px"
-                height="300px"
+                height="400px"
                 className="h-60 w-full rounded-full"
                 src="https://swiperjs.com/demos/images/nature-6.jpg"
                 alt="img"
@@ -89,7 +91,7 @@ const Gallery: React.FC = () => {
             <SwiperSlide>
               <Image
                 width="400px"
-                height="300px"
+                height="400px"
                 className="h-60 w-full rounded-full"
                 src="https://swiperjs.com/demos/images/nature-7.jpg"
                 alt="img"
@@ -98,7 +100,7 @@ const Gallery: React.FC = () => {
             <SwiperSlide>
               <Image
                 width="400px"
-                height="300px"
+                height="400px"
                 className="h-60 w-full rounded-full"
                 src="https://swiperjs.com/demos/images/nature-8.jpg"
                 alt="img"

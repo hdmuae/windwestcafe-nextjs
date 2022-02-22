@@ -3,13 +3,15 @@ import Image from "next/image";
 import Logo from "../../../public/svg/Logo.svg";
 import Facebook from "../../../public/svg/Facebook-white.svg";
 import Instagram from "../../../public/svg/Instagram-white.svg";
+import Tripadvisor from "../../../public/svg/Tripadvisor-white.svg";
+
 import Menu from "../../../public/svg/menu-icon.svg";
 import Close from "../../../public/svg/close.svg";
 
 interface myProps {
   fixed: boolean;
-  menu: boolean;
-  setMenu: (x: boolean) => void;
+  menu?: boolean;
+  setMenu?: (x: boolean) => void;
 }
 
 const Nav: React.FC<myProps> = ({ fixed, menu, setMenu }) => {
@@ -23,9 +25,9 @@ const Nav: React.FC<myProps> = ({ fixed, menu, setMenu }) => {
         id="navbar"
         className="ground:w-4/5 xl:max-w-default flex justify-between items-center xl:m-auto lg:mx-12 ground:mx-auto"
       >
-        <div className="w-7/12 lg:w-1/4">
+        <a href="#" className="w-7/12 lg:w-1/4">
           <Image src={Logo} alt="Wind West Cafe Logo" />
-        </div>
+        </a>
 
         <div className={`w-4/5 xl:w-1/2 justify-center ml-16 lg:block hidden`}>
           <div
@@ -65,8 +67,13 @@ const Nav: React.FC<myProps> = ({ fixed, menu, setMenu }) => {
           <a className="lg:block hidden mr-8" href="#">
             <Image src={Facebook} alt="Wind West Cafe Facebook Page" />
           </a>
-          <a className="lg:block hidden" href="#">
+
+          <a className="lg:block hidden mr-8" href="#">
             <Image src={Instagram} alt="Wind West Cafe Instagram Page" />
+          </a>
+
+          <a className="lg:block hidden" href="#">
+            <Image src={Tripadvisor} alt="Wind West Cafe Tripadvisor Page" />
           </a>
         </div>
       </div>
