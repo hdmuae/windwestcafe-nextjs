@@ -36,9 +36,9 @@ const Footer: React.FC = () => {
             <a href="#contact" className="hover:font-bold pb-2">
               Contact
             </a>
-            <a href="/termsandconditions" className="hover:font-bold">
-              Terms and Conditions
-            </a>
+            <Link href="/termsandconditions" passHref>
+              <a className="hover:font-bold">Terms and Conditions</a>
+            </Link>
           </div>
 
           <div className="flex flex-col">

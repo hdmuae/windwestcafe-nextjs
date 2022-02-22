@@ -53,13 +53,13 @@ const Nav: React.FC<myProps> = ({ fixed, menu, setMenu }) => {
 
         <div className="w-1/4 flex items-center justify-end text-white ">
           {!menu && (
-            <div onClick={() => setMenu(!menu)} className="lg:hidden">
+            <div onClick={() => setMenu!(!menu)} className="lg:hidden">
               <Image src={Menu} alt="Burger menu icon" />
             </div>
           )}
 
           {menu && (
-            <div onClick={() => setMenu(!menu)} className="lg:hidden">
+            <div onClick={() => setMenu!(!menu)} className="lg:hidden">
               <Image src={Close} alt="Close burger menu icon" />
             </div>
           )}
