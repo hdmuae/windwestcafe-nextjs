@@ -14,8 +14,8 @@ const Card: React.FC<myProps> = ({ id, active, setActive, img }) => {
       onClick={() => setActive(active === id ? -1 : id)}
       className={`${
         active === id
-          ? "h-[550px] w-full bg-primary"
-          : "m-auto h-[500px] w-11/12 bg-white"
+          ? "h-[580px] w-full bg-primary md:h-[550px]"
+          : "m-auto h-[570px] w-11/12 bg-white md:h-[500px]"
       } relative flex cursor-pointer flex-col items-center justify-center rounded-full transition-all duration-1000`}
     >
       <div className="translate-y-4 duration-500">

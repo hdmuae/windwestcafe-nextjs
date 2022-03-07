@@ -2,6 +2,17 @@ import * as React from "react";
 import Image from "next/image";
 
 const Menu: React.FC = () => {
+  const [category, setCategory] = React.useState(0);
+
+  const categories = ["BREAKFAST", "HOT DRINKS", "DESSERT", "COLD DRINKS"];
+  const editCategory = (change: boolean) => {
+    if (change) {
+      category === 3 ? setCategory(0) : setCategory(category + 1);
+    } else {
+      category === 0 ? setCategory(3) : setCategory(category - 1);
+    }
+  };
+
   const MenuRecord: React.FC<{
     name: string;
     description: string;
@@ -44,15 +55,20 @@ const Menu: React.FC = () => {
             width={20}
             height={20}
             alt="left arrow"
+            onClick={() => editCategory(false)}
           />
         </div>
 
+        <h1 className="font-minion text-xl font-bold text-white">
+          {categories[category]}
+        </h1>
         <div>
           <Image
             src="/svg/right-arrow.svg"
             width={20}
             height={20}
             alt="right arrow"
+            onClick={() => editCategory(true)}
           />
         </div>
       </div>
