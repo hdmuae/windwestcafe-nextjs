@@ -1,12 +1,5 @@
 import * as React from "react";
 import Image from "next/image";
-import Logo from "../../../public/svg/Logo.svg";
-import Facebook from "../../../public/svg/Facebook-white.svg";
-import Instagram from "../../../public/svg/Instagram-white.svg";
-import Tripadvisor from "../../../public/svg/Tripadvisor-white.svg";
-
-import Menu from "../../../public/svg/menu-icon.svg";
-import Close from "../../../public/svg/close.svg";
 
 interface myProps {
   fixed: boolean;
@@ -17,63 +10,93 @@ interface myProps {
 const Nav: React.FC<myProps> = ({ fixed, menu, setMenu }) => {
   return (
     <nav
-      className={`fixed w-full left-0 right-0 py-5 z-50 transition-colors duration-200 ${
-        fixed ? "" : "bg-primary"
+      className={`fixed left-0 right-0 z-50 w-full py-5 transition-colors duration-200 ${
+        fixed ? "" : "bg-black bg-opacity-60"
       }`}
     >
       <div
         id="navbar"
-        className="ground:w-4/5 xl:max-w-default flex justify-between items-center xl:m-auto lg:mx-12 ground:mx-auto"
+        className="flex max-w-default items-center justify-between lg:mx-12 ground:mx-auto ground:w-4/5"
       >
         <a href="#" className="w-7/12 lg:w-1/4">
-          <Image src={Logo} alt="Wind West Cafe Logo" />
+          <Image
+            width="160"
+            height="60"
+            src="/svg/Logo.svg"
+            alt="Wind West Cafe Logo"
+          />
         </a>
 
-        <div className={`w-4/5 xl:w-1/2 justify-center ml-16 lg:block hidden`}>
+        <div className={`ml-16 hidden w-4/5 justify-center lg:block xl:w-1/2`}>
           <div
-            className={`w-full flex justify-between items-center text-white`}
+            className={`flex w-full items-center justify-between text-white`}
           >
-            <a className="text-lg xl:text-xl hover:border-b-2" href="#">
+            <a className="font-nexa hover:border-b-2" href="#">
               About Us
             </a>
-            <a className="text-lg xl:text-xl hover:border-b-2" href="#menu">
+            <a className="font-nexa hover:border-b-2" href="#menu">
               Our Menu
             </a>
-            <a className="text-lg xl:text-xl hover:border-b-2" href="#shop">
+            <a className="font-nexa hover:border-b-2" href="#shop">
               Shop Dersut
             </a>
-            <a className="text-lg xl:text-xl hover:border-b-2" href="#gallery">
+            <a className="font-nexa hover:border-b-2" href="#gallery">
               Gallery
             </a>
-            <a className="text-lg xl:text-xl hover:border-b-2" href="#contact">
+            <a className="font-nexa hover:border-b-2" href="#contact">
               Contact Us
             </a>
           </div>
         </div>
 
-        <div className="w-1/4 flex items-center justify-end text-white ">
+        <div className="flex w-1/4 items-center justify-end text-white">
           {!menu && (
             <div onClick={() => setMenu!(!menu)} className="lg:hidden">
-              <Image src={Menu} alt="Burger menu icon" />
+              <Image
+                width="15"
+                height="15"
+                src="/svg/menu-icon.svg"
+                alt="Burger menu icon"
+              />
             </div>
           )}
 
           {menu && (
             <div onClick={() => setMenu!(!menu)} className="lg:hidden">
-              <Image src={Close} alt="Close burger menu icon" />
+              <Image
+                src="/svg/close.svg"
+                width="15"
+                height="15"
+                alt="Close burger menu icon"
+              />
             </div>
           )}
 
-          <a className="lg:block hidden mr-8" href="#">
-            <Image src={Facebook} alt="Wind West Cafe Facebook Page" />
+          <a className="mr-8 hidden lg:block" href="#">
+            <Image
+              width="15"
+              height="15"
+              src="/svg/Facebook-white.svg"
+              alt="Wind West Cafe Facebook Page"
+            />
           </a>
 
-          <a className="lg:block hidden mr-8" href="#">
-            <Image src={Instagram} alt="Wind West Cafe Instagram Page" />
+          <a className="mr-8 hidden lg:block" href="#">
+            <Image
+              width="15"
+              height="15"
+              src="/svg/Instagram-white.svg"
+              alt="Wind West Cafe Instagram Page"
+            />
           </a>
 
-          <a className="lg:block hidden" href="#">
-            <Image src={Tripadvisor} alt="Wind West Cafe Tripadvisor Page" />
+          <a className="hidden lg:block" href="#">
+            <Image
+              width="15"
+              height="15"
+              src="/svg/Tripadvisor-white.svg"
+              alt="Wind West Cafe Tripadvisor Page"
+            />
           </a>
         </div>
       </div>

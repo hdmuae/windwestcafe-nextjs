@@ -1,11 +1,11 @@
 import * as React from "react";
-import Map from "./map";
 import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
+import Footer from "../../components/Footer";
 
-const ContactUs: React.FC = () => {
+export const ContactUs: React.FC = () => {
   const { register, handleSubmit, reset } = useForm();
 
   const toastifySuccess = () => {
@@ -45,61 +45,57 @@ const ContactUs: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="bg-primary py-32">
-      <h1 className="text-center text-title text-white mb-8">Contact Us</h1>
-      <div className="max-w-default lg:w-4/5 m-auto flex-col flex lg:flex-row">
-        <div id="map" className="w-4/5 lg:w-2/5 h-full m-auto">
-          <Map />
-        </div>
+    <section
+      id="contact"
+      className="bg-[url('/images/background_contact.png')] bg-cover pt-32"
+    >
+      <div className="m-auto mb-12 w-4/5 max-w-default">
+        <h1 className="mb-12 text-5xl text-white lg:text-title">Contact Us</h1>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="w-4/5 lg:w-2/5 m-auto mt-6"
+          className="m-auto mt-6 lg:m-0 lg:w-2/5"
         >
           <div className="mb-4">
-            <p className="mb-1 text-white">Name</p>
             <input
               {...register("name")}
-              className="w-full bg-white bg-opacity-20 rounded-xl p-3 outline-none text-white placeholder:text-white placeholder:opacity-50"
-              placeholder="John Doe"
+              className="w-full rounded-xl border bg-transparent p-4 font-nexa placeholder:text-white"
+              placeholder="Your name"
             />
           </div>
 
-          <div className="w-full mb-4">
-            <p className="mb-1 text-white">E-mail</p>
+          <div className="mb-4 w-full">
             <input
               {...register("email")}
-              className="w-full bg-white bg-opacity-20 rounded-xl p-3 outline-none text-white placeholder:text-white placeholder:opacity-50"
-              placeholder="johndoe@mail.com"
+              className="w-full rounded-xl border bg-transparent p-4 font-nexa placeholder:text-white"
+              placeholder="Your email"
             />
           </div>
 
-          <div className="w-full mb-4">
-            <p className="mb-1 text-white">Number</p>
+          <div className="mb-4 w-full">
             <input
               {...register("number")}
-              className="w-full bg-white bg-opacity-20 rounded-xl p-3 outline-none text-white placeholder:text-white placeholder:opacity-50"
-              placeholder="+123 4 567 890"
+              className="w-full rounded-xl border bg-transparent p-4 font-nexa placeholder:text-white"
+              placeholder="Your number"
             />
           </div>
 
-          <div className="w-full mb-4">
-            <p className="mb-1 text-white">Your message</p>
+          <div className="mb-4 w-full">
             <textarea
               rows={6}
               {...register("message")}
-              className="w-full bg-white bg-opacity-20 rounded-xl p-3 outline-none text-white placeholder:text-white placeholder:opacity-50"
-              placeholder="Enter your message"
+              className="w-full rounded-xl border bg-transparent p-3 font-nexa placeholder:text-white"
+              placeholder="Your message"
             />
           </div>
 
-          <div className="flex justify-center">
-            <button className="bg-white text-primary font-bold rounded py-1 px-6">
-              SEND
-            </button>
-          </div>
+          <button className="bg- w-full rounded-xl bg-primary p-3 font-nexa text-lg font-bold text-white">
+            Submit
+          </button>
         </form>
         <ToastContainer />
       </div>
+
+      <Footer />
     </section>
   );
 };

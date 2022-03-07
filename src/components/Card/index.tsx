@@ -13,13 +13,15 @@ const Card: React.FC<myProps> = ({ id, active, setActive, img }) => {
     <div
       onClick={() => setActive(active === id ? -1 : id)}
       className={`${
-        active === id ? "h-cardfull w-full" : "w-4/5 m-auto h-card opacity-50"
-      } relative flex flex-col justify-center items-center bg-white rounded-full cursor-pointer transition-all duration-1000`}
+        active === id
+          ? "h-[550px] w-full bg-primary"
+          : "m-auto h-[500px] w-11/12 bg-white"
+      } relative flex cursor-pointer flex-col items-center justify-center rounded-full transition-all duration-1000`}
     >
-      <div className={`${active === id ? "translate-y-4" : ""} duration-500`}>
+      <div className="translate-y-4 duration-500">
         <Image
-          width={active === id ? 145 : 84}
-          height={active === id ? 314 : 144}
+          width={active === id ? 210 : 150}
+          height={active === id ? 350 : 240}
           alt="Product img"
           src={img}
         />
@@ -28,54 +30,65 @@ const Card: React.FC<myProps> = ({ id, active, setActive, img }) => {
       <div
         className={`${
           active === id ? "translate-y-4" : ""
-        } flex flex-col justify-center items-center`}
+        } flex flex-col items-center justify-center`}
       >
-        <h2 className="text-primary text-3xl mb-3">VERDE</h2>
+        <h2
+          className={` ${
+            active === id ? "text-white" : "text-primary"
+          } mb-3 font-minion text-3xl font-bold`}
+        >
+          Cafe Milo
+        </h2>
+
+        <div className="mb-2 flex flex-col md:flex-row">
+          <div className="mr-2 flex">
+            <Image
+              width={20}
+              height={20}
+              src="/svg/coffee-bean.svg"
+              alt="coffee bean icon"
+            />
+            <p
+              className={` ${
+                active === id ? "text-white" : "text-primary"
+              } ml-2 font-light`}
+            >
+              AROMA 90%
+            </p>
+          </div>
+
+          <div className="flex">
+            <Image
+              width={20}
+              height={20}
+              src="/svg/coffee-bean.svg"
+              alt="coffee bean icon"
+            />
+            <p
+              className={` ${
+                active === id ? "text-white" : "text-primary"
+              } ml-2 font-light`}
+            >
+              INTENSITY 80%
+            </p>
+          </div>
+        </div>
+
         <p
           className={` ${
-            active === id ? "order-2" : "hidden"
-          } w-3/4 font-light text-center text-primary mb-8`}
+            active === id ? "text-white" : "text-primary"
+          } mb-8 w-3/4 text-center font-light`}
         >
           100% Arabica with a light, delicate taste. 1000 g pack of beans.
         </p>
 
-        <p className="font-light text-primary pb-2">
-          AROMA <span className={` ${active === id ? "hidden" : ""}`}>90%</span>
-        </p>
-        <div
-          className={` ${
-            active === id ? "" : "hidden"
-          } w-1/2 flex justify-between pb-2`}
+        <button
+          className={`${
+            active === id ? "bg-white" : "bg-primary text-white"
+          } rounded-lg py-2 px-8 font-nexa`}
         >
-          {[1, 2, 3, 4, 5].map((ele, key) => (
-            <Image
-              key={key}
-              width={30}
-              height={30}
-              src="/svg/coffee-full.svg"
-              alt="coffee bean icon"
-            />
-          ))}
-        </div>
-        <p className="font-light text-primary py-2">
-          INTENSITY
-          <span className={` ${active === id ? "hidden" : ""}`}> 80%</span>
-        </p>
-        <div
-          className={` ${
-            active === id ? "" : "hidden"
-          } w-1/2 flex justify-between`}
-        >
-          {[1, 2, 3, 4, 5].map((ele, key) => (
-            <Image
-              key={key}
-              width={30}
-              height={30}
-              src="/svg/coffee-full.svg"
-              alt="coffee bean icon"
-            />
-          ))}
-        </div>
+          Shop now
+        </button>
       </div>
     </div>
   );

@@ -6,15 +6,15 @@ module.exports = {
       maxWidth: {
         default: "1366px",
       },
+      fontFamily: {
+        nexa: "Nexa",
+        minion: "minion-variable-concept",
+      },
       fontSize: {
-        title: "40px;",
+        title: "72px;",
       },
       borderRadius: {
         full: "53px",
-      },
-      width: {
-        28: "27%",
-        400: "600px",
       },
       height: {
         card: "357px",
@@ -22,8 +22,8 @@ module.exports = {
         60: "60%",
       },
       colors: {
-        primary: "#253871",
-        secondary: "#B8AEA4",
+        primary: "#29376D",
+        secondary: "#E5E5E5",
         darkblue: "#010101",
       },
       translate: {

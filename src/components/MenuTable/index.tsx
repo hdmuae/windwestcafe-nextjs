@@ -2,66 +2,62 @@ import * as React from "react";
 import Image from "next/image";
 
 const Menu: React.FC = () => {
-  const [idx, setIdx] = React.useState(0);
-  const [filter, setFilter] = React.useState(0);
-
-  const Button: React.FC<{ name: string; id: number }> = ({ id, name }) => (
-    <button
-      className={`w-36 border border-white rounded py-2 ${
-        filter === id ? "font-bold bg-white text-primary" : "text-white"
-      }`}
-      onClick={() => setFilter(id)}
-    >
-      {name}
-    </button>
-  );
-
   const MenuRecord: React.FC<{
     name: string;
     description: string;
     price: number;
   }> = ({ name, description, price }) => (
-    <div className="flex-col md:flex-row flex justify-center border-black pt-8 pb-6">
-      <p className="md:w-1/4 font-bold text-white">{name}</p>
-      <p className="md:w-1/2 order-3 md:order-2 text-white opacity-50">
+    <div className="mb-4 border-b-2 border-gray-300 pb-2">
+      <div className="flex justify-between">
+        <p className="mb-2 font-minion text-2xl font-bold">{name}</p>
+        <p className="font-minion text-2xl font-bold md:w-1/4 md:text-right">
+          {price} AED
+        </p>
+      </div>
+      <p className="font-nexa text-sm font-light text-primary opacity-50">
         {description}
-      </p>
-      <p className="mb-4 md:w-1/4 order-2 md:order-3 md:text-right font-bold text-white">
-        {price} AED
       </p>
     </div>
   );
 
   return (
-    <div>
-      <div className="bg-white text-center text-primary text-3xl font-bold md:hidden block">
-        <div className="w-1/2 m-auto flex justify-between">
+    <div className="flex flex-col lg:flex-row">
+      <div className="mr-12 hidden h-[400px] w-1/4 flex-col justify-around rounded-3xl bg-primary py-16 px-12 md:flex">
+        <h1 className="mb-0 cursor-pointer font-minion text-xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+          BREAKFAST
+        </h1>
+        <h1 className="text-underline mb-0 cursor-pointer font-minion text-xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+          HOT DRINKS
+        </h1>
+        <h1 className="hover:text-underline mb-0 cursor-pointer font-minion text-xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+          DESSERT
+        </h1>
+        <h1 className="hover:text-underline cursor-pointer font-minion text-xl font-bold text-white decoration-1 hover:underline lg:text-[32px]">
+          COLD DRINKS
+        </h1>
+      </div>
+
+      <div className="mb-6 flex items-center justify-between rounded-3xl bg-primary py-4 px-6 md:hidden">
+        <div>
           <Image
-            className="cursor-pointer"
-            width="10px"
-            height="20px"
             src="/svg/left-arrow.svg"
+            width={20}
+            height={20}
             alt="left arrow"
           />
-          <p>Coffee</p>
+        </div>
+
+        <div>
           <Image
-            className="cursor-pointer"
-            width="10px"
-            height="20px"
             src="/svg/right-arrow.svg"
+            width={20}
+            height={20}
             alt="right arrow"
           />
         </div>
       </div>
 
-      <div className="hidden md:flex w-3/4 m-auto justify-around my-4">
-        <Button id={0} name="BREAKFAST" />
-        <Button id={1} name="HOT DRINKS" />
-        <Button id={2} name="COLD DRINKS" />
-        <Button id={3} name="DESSERT" />
-      </div>
-
-      <div className="w-10/12 m-auto">
+      <div className="m-auto w-10/12">
         <MenuRecord
           name="Cappuchino"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -86,27 +82,6 @@ const Menu: React.FC = () => {
           name="Fappuchino"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor"
           price={25}
-        />
-      </div>
-
-      <div className="flex justify-center">
-        <button
-          className={`h-3 w-3 rounded-full border border-white mt-6 mx-2 ${
-            idx === 0 ? "bg-white" : ""
-          }`}
-          onClick={() => setIdx(0)}
-        />
-        <button
-          className={`h-3 w-3 rounded-full border border-white mt-6 mx-2 ${
-            idx === 1 ? "bg-white" : ""
-          }`}
-          onClick={() => setIdx(1)}
-        />
-        <button
-          className={`h-3 w-3 rounded-full border border-white mt-6 mx-2 ${
-            idx === 2 ? "bg-white" : ""
-          }`}
-          onClick={() => setIdx(2)}
         />
       </div>
     </div>

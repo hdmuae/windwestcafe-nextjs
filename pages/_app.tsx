@@ -8,11 +8,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;

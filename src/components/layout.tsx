@@ -6,7 +6,7 @@ export default function Layout({ children }: any) {
   return (
     <React.Fragment>
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </React.Fragment>
   );
 }

@@ -1,29 +1,26 @@
 import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Facebook from "../../../public/svg/Facebook-white.svg";
-import Instagram from "../../../public/svg/Instagram-white.svg";
-import Tripadvisor from "../../../public/svg/Tripadvisor-white.svg";
 
 const Footer: React.FC = () => {
   return (
-    <footer>
-      <div className="w-4/5 m-auto py-12 lg:block hidden">
-        <div className="max-w-default m-auto flex justify-between text-primary">
+    <footer className="bg-black bg-opacity-60">
+      <div className="m-auto hidden w-4/5 py-12 lg:block">
+        <div className="m-auto flex max-w-default justify-between font-nexa text-white">
           <a href="#">
             <Image
-              src="/svg/bluelogo.svg"
-              width="150px"
-              height="150px"
+              width="160"
+              height="60"
+              src="/svg/Logo.svg"
               alt="Wind West Cafe Logo"
             />
           </a>
           <div className="flex flex-col">
-            <h1 className="text-lg font-bold mb-3">Know Wind West Cafe</h1>
+            <h1 className="mb-3 text-lg font-bold">Know Wind West Cafe</h1>
             <Link href="/">
-              <a className="hover:font-bold pb-2">About Us</a>
+              <a className="pb-2 hover:font-bold">About Us</a>
             </Link>
-            <a href="#menu" className="hover:font-bold pb-2">
+            <a href="#menu" className="pb-2 hover:font-bold">
               Our Menu
             </a>
             <a href="#shop" className="hover:font-bold">
@@ -32,8 +29,8 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="flex flex-col">
-            <h1 className="text-lg font-bold mb-3">More Information</h1>
-            <a href="#contact" className="hover:font-bold pb-2">
+            <h1 className="mb-3 text-lg font-bold">More Information</h1>
+            <a href="#contact" className="pb-2 hover:font-bold">
               Contact
             </a>
             <Link href="/termsandconditions" passHref>
@@ -42,21 +39,27 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="flex flex-col">
-            <h1 className="text-lg font-bold mb-3">Contact Information</h1>
-            <p className="hover:font-bold pb-2">+123 4 567 890</p>
-            <p className="hover:font-bold pb-2">+123 4 567 890</p>
-            <p className="hover:font-bold pb-2">info@mail.com</p>
+            <h1 className="mb-3 text-lg font-bold">Contact Information</h1>
+            <a href="tel:+123 4 567 890" className="pb-2 hover:font-bold">
+              +123 4 567 890
+            </a>
+            <a href="tel:+123 4 567 890" className="pb-2 hover:font-bold">
+              +123 4 567 890
+            </a>
+            <a href="mailto:info@mail.com" className="pb-2 hover:font-bold">
+              info@mail.com
+            </a>
             <p className="hover:font-bold">Address - Dubai - UAE</p>
           </div>
 
           <div>
-            <h1 className="text-lg font-bold mb-3">Social Media</h1>
+            <h1 className="mb-3 text-lg font-bold">Social Media</h1>
             <div className="flex justify-between">
               <Image
                 className="cursor-pointer"
                 width="15"
                 height="15"
-                src="/svg/Facebook.svg"
+                src="/svg/Facebook-white.svg"
                 alt="Facebook icon"
               />
 
@@ -64,14 +67,14 @@ const Footer: React.FC = () => {
                 width="15"
                 height="15"
                 className="cursor-pointer"
-                src="/svg/Instagram.svg"
+                src="/svg/Instagram-white.svg"
                 alt="Instagram icon"
               />
               <Image
                 width="20"
                 height="20"
                 className="cursor-pointer"
-                src="/svg/Tripadvisor.svg"
+                src="/svg/Tripadvisor-white.svg"
                 alt="Tripadvisor icon"
               />
             </div>
@@ -79,75 +82,75 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center lg:hidden my-6 text-primary">
+      <div className="flex flex-col items-center justify-center text-white lg:hidden">
         <div>
           <Image
-            src="/svg/logo-horizontal.svg"
+            src="/svg/logo.svg"
             width="200px"
             height="120px"
             alt="Wind West Cafe Logo"
           />
         </div>
 
-        <div className="w-full flex justify-around mb-6">
-          <div className="flex flex-col">
-            <h3 className="text-lg font-bold mb-3">Know Wind West Cafe</h3>
-            <a href="#about" className="hover:font-bold pb-2">
+        <div className="mb-6 flex w-full flex-col justify-around md:flex-row">
+          <div className="m-auto mb-8 flex flex-col text-center">
+            <h3 className="mb-3 font-nexa text-lg">Know Wind West Cafe</h3>
+            <a href="#about" className="pb-2 font-nexa">
               About Us
             </a>
-            <a href="#menu" className="hover:font-bold pb-2">
+            <a href="#menu" className="pb-2 font-nexa">
               Our Menu
             </a>
-            <a href="#shop" className="hover:font-bold pb-2">
+            <a href="#shop" className="pb-2 font-nexa">
               Shop Dersut
             </a>
-            <a href="#contact" className="hover:font-bold pb-2">
+            <a href="#contact" className="pb-2 font-nexa">
               Contact
             </a>
-            <a href="#" className="hover:font-bold">
+            <a href="#" className="font-nexa">
               Terms and Conditions
             </a>
           </div>
 
-          <div className="flex flex-col">
-            <h3 className="text-lg font-bold mb-3">Contact Information</h3>
-            <p className="hover:font-bold pb-2">+123 4 567 890</p>
-            <p className="hover:font-bold pb-2">+123 4 567 890</p>
-            <p className="hover:font-bold pb-2">info@mail.com</p>
-            <p className="hover:font-bold pb-2">Address - Street Name</p>
-            <p className="hover:font-bold">Dubai - UAE</p>
+          <div className="m-auto flex flex-col text-center">
+            <h3 className="mb-3 font-nexa text-lg">Contact Information</h3>
+            <p className="pb-2 font-nexa">+123 4 567 890</p>
+            <p className="pb-2 font-nexa">+123 4 567 890</p>
+            <p className="pb-2 font-nexa">info@mail.com</p>
+            <p className="pb-2 font-nexa">Address - Street Name</p>
+            <p className="font-nexa">Dubai - UAE</p>
           </div>
         </div>
 
-        <div className="w-full flex justify-between">
+        <div className="flex w-1/4 justify-between pb-4">
           <a>
             <Image
+              width="15"
+              height="15"
               className="cursor-pointer"
-              src={Facebook}
+              src="/svg/Facebook-white.svg"
               alt="Facebook icon"
             />
           </a>
           <a>
             <Image
+              width="15"
+              height="15"
               className="cursor-pointer"
-              src={Instagram}
+              src="/svg/Instagram-white.svg"
               alt="Instagram icon"
             />
           </a>
           <a>
             <Image
+              width="15"
+              height="15"
               className="cursor-pointer"
-              src={Tripadvisor}
+              src="/svg/Tripadvisor-white.svg"
               alt="Tripadvisor icon"
             />
           </a>
         </div>
-      </div>
-
-      <div className="bg-primary">
-        <p className="text-base text-center text-white py-4">
-          © 2022 Wind West Cafe. All rights reserved
-        </p>
       </div>
     </footer>
   );

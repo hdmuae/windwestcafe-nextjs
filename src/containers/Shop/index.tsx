@@ -1,42 +1,26 @@
 import * as React from "react";
 import Card from "../../components/Card";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination } from "swiper";
-const Shop: React.FC = () => {
+import SwiperCore, { Navigation } from "swiper";
+
+export const Shop: React.FC = () => {
   const [active, setActive] = React.useState(1);
 
   // install Swiper modules
-  SwiperCore.use([Pagination]);
+  SwiperCore.use([Navigation]);
   return (
-    <section id="shop" className="bg-primary py-32">
-      <div className="max-w-default m-auto overflow-x-hidden">
-        <h1 className="font-medium text-center text-white lg:text-title text-3xl lg:mb-12 mb-4">
+    <section id="shop" className="m-auto mt-20 w-4/5 max-w-default">
+      <div className="overflow-x-hidden pt-8">
+        <h1 className="pb-28 font-minion text-5xl font-bold lg:text-title">
           Shop Dersut
         </h1>
-        <p className="m-auto w-4/5 md:w-3/5 lg:w-1/2 text-white text-center text-base mb-8">
-          We have had a passion for quality coffee and offering you an
-          outstanding coffee experience: gourmet and tasty coffees prepared by
-          our expert baristas with top quality Dersut coffee beans.
-        </p>
-
-        <div className="flex justify-center mb-32">
-          <button
-            aria-label="shop now"
-            className="m-auto bg-white text-primary font-bold rounded p-2"
-          >
-            SHOP NOW
-          </button>
-        </div>
 
         <Swiper
           style={{ overflow: "visible" }}
-          initialSlide={1}
+          initialSlide={2}
           slidesPerView={3}
-          spaceBetween={20}
           centeredSlides={true}
-          pagination={{
-            clickable: true,
-          }}
+          navigation={true}
           breakpoints={{
             0: {
               slidesPerView: 1,
@@ -58,7 +42,7 @@ const Shop: React.FC = () => {
               id={0}
               active={active}
               setActive={setActive}
-              img="/images/product1.png"
+              img="/images/image_coffee.png"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -66,7 +50,7 @@ const Shop: React.FC = () => {
               id={1}
               active={active}
               setActive={setActive}
-              img="/images/product3.png"
+              img="/images/image_coffee.png"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -74,7 +58,7 @@ const Shop: React.FC = () => {
               id={2}
               active={active}
               setActive={setActive}
-              img="/images/product3.png"
+              img="/images/image_coffee.png"
             />
           </SwiperSlide>
 
@@ -83,7 +67,7 @@ const Shop: React.FC = () => {
               id={3}
               active={active}
               setActive={setActive}
-              img="/images/product3.png"
+              img="/images/image_coffee.png"
             />
           </SwiperSlide>
 
@@ -92,37 +76,11 @@ const Shop: React.FC = () => {
               id={4}
               active={active}
               setActive={setActive}
-              img="/images/product3.png"
+              img="/images/image_coffee.png"
             />
           </SwiperSlide>
         </Swiper>
-
-        <div className="flex justify-around">
-          {/* 
-          <Card
-            id={0}
-            active={active}
-            setActive={setActive}
-            img="/images/product1.png"
-          />
-          
-          <Card
-            id={1}
-            active={active}
-            setActive={setActive}
-            img="/images/product2.png"
-          />
-
-          <Card
-            id={2}
-            active={active}
-            setActive={setActive}
-            img="/images/product3.png"
-          /> */}
-        </div>
       </div>
     </section>
   );
 };
-
-export default Shop;

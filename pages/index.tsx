@@ -1,10 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Menu from "../src/containers/Menu";
-import Shop from "../src/containers/Shop";
-import Header from "../src/containers/Header";
-import Gallery from "../src/containers/Gallery";
-import ContactUs from "../src/containers/ContactUs";
+import {
+  Menu,
+  Shop,
+  Header,
+  Gallery,
+  About,
+  ContactUs,
+} from "../src/containers";
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +21,7 @@ const Home: NextPage = () => {
         />
       </Head>
       <Header />
+      <About />
       <Menu />
       <Shop />
       <Gallery />
