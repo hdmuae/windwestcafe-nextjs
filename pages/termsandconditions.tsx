@@ -1,12 +1,13 @@
 import * as React from "react";
+import Footer from "../src/components/Footer";
 import Nav from "../src/components/Navbar";
 
 const Terms: React.FC = () => {
   return (
     <div>
       <Nav fixed={false} />
-      <div className="max-w-default m-auto py-60">
-        <div className="w-4/5 mx-auto">
+      <div className="m-auto max-w-default py-60">
+        <div className="mx-auto w-4/5 font-minion text-xl">
           Why do we use it? It is a long established fact that a reader will be
           distracted by the readable content of a page when looking at its
           layout. The point of using Lorem Ipsum is that it has a more-or-less
@@ -46,6 +47,7 @@ const Terms: React.FC = () => {
           non-characteristic words etc.
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
