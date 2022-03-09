@@ -3,17 +3,17 @@ import Image from "next/image";
 
 export const About: React.FC = () => {
   return (
-    <section className="relative h-[700px]">
-      <Image
+    <section className="relative h-[700px] bg-darkblue bg-[url('/images/Subtract.png')] bg-cover">
+      {/* <Image
         className="-z-10"
         layout="fill"
         objectFit="cover"
         alt="coffee background"
-        src="/images/background_about.png"
-      />
+        src="/images/Subtract.png"
+      /> */}
 
-      <div className="w-4/5 max-w-default lg:mx-12 ground:mx-auto">
-        <h1 className="pt-12 pb-12 font-minion text-4xl font-bold text-white lg:pt-28 lg:text-title">
+      <div className="flex h-full w-4/5 max-w-default flex-col justify-center lg:mx-12 ground:mx-auto">
+        <h1 className="pt-12 pb-12 font-minion text-4xl font-bold text-white lg:text-title">
           About us
         </h1>
         <p className="w-full font-nexa text-lg text-white lg:w-8/12">
