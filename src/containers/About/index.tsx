@@ -3,13 +3,13 @@ import Image from "next/image";
 
 export const About: React.FC = () => {
   return (
-    <section className="relative h-[850px] bg-darkblue">
-      <Image
+    <section className="relative h-[850px] bg-darkblue bg-[url('/images/coffee.png')] bg-cover">
+      {/* <Image
         className="z-0"
         layout="fill"
         alt="coffee background"
         src="/images/coffee.png"
-      />
+      /> */}
 
       <div className="flex h-full w-4/5 max-w-default flex-col justify-center lg:mx-12 ground:mx-auto">
         <h1 className="z-10 pt-12 pb-12 font-minion text-4xl font-bold text-white lg:text-title">
