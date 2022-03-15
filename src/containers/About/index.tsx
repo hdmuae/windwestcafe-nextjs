@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const About: React.FC = () => {
   return (
-    <section className="relative h-[700px] bg-darkblue bg-[url('/images/Subtract.png')] bg-cover">
+    <section className="relative h-[700px] bg-darkblue bg-[url('/images/coffee.png')] bg-cover">
       {/* <Image
         className="-z-10"
         layout="fill"
