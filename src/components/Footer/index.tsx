@@ -7,32 +7,38 @@ const Footer: React.FC = () => {
     <footer className="bg-black bg-opacity-60">
       <div className="m-auto hidden w-4/5 py-12 lg:block">
         <div className="m-auto flex max-w-default justify-between font-nexa text-white">
-          <a href="#">
-            <Image
-              width="160"
-              height="60"
-              src="/svg/Logo.svg"
-              alt="Wind West Cafe Logo"
-            />
-          </a>
+          <Link href="/#welcome">
+            <a>
+              <Image
+                width="160"
+                height="60"
+                src="/svg/Logo.svg"
+                alt="Wind West Cafe Logo"
+              />
+            </a>
+          </Link>
+
           <div className="flex flex-col">
             <h1 className="mb-3 text-lg font-bold">Know Wind West Cafe</h1>
-            <Link href="/">
+            <Link href="/#">
               <a className="pb-2 hover:font-bold">About Us</a>
             </Link>
-            <a href="#menu" className="pb-2 hover:font-bold">
-              Our Menu
-            </a>
-            <a href="#shop" className="hover:font-bold">
-              Shop Dersut
-            </a>
+
+            <Link href="/#menu">
+              <a className="pb-2 hover:font-bold">Our Menu</a>
+            </Link>
+
+            <Link href="/#shop">
+              <a className="hover:font-bold">Shop Dersut</a>
+            </Link>
           </div>
 
           <div className="flex flex-col">
             <h1 className="mb-3 text-lg font-bold">More Information</h1>
-            <a href="#contact" className="pb-2 hover:font-bold">
-              Contact
-            </a>
+            <Link href="">
+              <a className="pb-2 hover:font-bold">Careers</a>
+            </Link>
+
             <Link href="/termsandconditions" passHref>
               <a className="hover:font-bold">Terms and Conditions</a>
             </Link>
@@ -83,33 +89,39 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center text-white lg:hidden">
-        <div>
-          <Image
-            src="/svg/logo.svg"
-            width="200px"
-            height="120px"
-            alt="Wind West Cafe Logo"
-          />
-        </div>
+        <Link href="/#welcome">
+          <a>
+            <Image
+              src="/svg/logo.svg"
+              width="200px"
+              height="120px"
+              alt="Wind West Cafe Logo"
+            />
+          </a>
+        </Link>
 
         <div className="mb-6 flex w-full flex-col justify-around md:flex-row">
           <div className="m-auto mb-8 flex flex-col text-center">
             <h3 className="mb-3 font-nexa text-lg">Know Wind West Cafe</h3>
-            <a href="#about" className="pb-2 font-nexa">
-              About Us
-            </a>
-            <a href="#menu" className="pb-2 font-nexa">
-              Our Menu
-            </a>
-            <a href="#shop" className="pb-2 font-nexa">
-              Shop Dersut
-            </a>
-            <a href="#contact" className="pb-2 font-nexa">
-              Contact
-            </a>
-            <a href="#" className="font-nexa">
-              Terms and Conditions
-            </a>
+            <Link href="/#about">
+              <a className="pb-2 font-nexa">About Us</a>
+            </Link>
+
+            <Link href="/#menu">
+              <a className="pb-2 font-nexa">Our Menu</a>
+            </Link>
+
+            <Link href="/#shop">
+              <a className="pb-2 font-nexa">Shop Dersut</a>
+            </Link>
+
+            <Link href="">
+              <a className="pb-2 font-nexa">Careers</a>
+            </Link>
+
+            <Link href="/termsandconditions">
+              <a className="font-nexa">Terms and Conditions</a>
+            </Link>
           </div>
 
           <div className="m-auto flex flex-col text-center">

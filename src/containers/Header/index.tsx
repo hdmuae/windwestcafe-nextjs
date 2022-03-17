@@ -42,7 +42,7 @@ export const Header: React.FC = () => {
 
   return (
     <section
-      id="header"
+      id="welcome"
       // @ts-ignore
       ref={containerRef}
       className={`"text-white -z-10 h-screen ${
@@ -60,12 +60,12 @@ export const Header: React.FC = () => {
         <source src="/video/ocean.mp4" type="video/mp4" />
       </video>
 
-      <Navbar fixed={isVisible} menu={menu} setMenu={setMenu} />
+      <Navbar fixed={true} bg={isVisible} menu={menu} setMenu={setMenu} />
 
       <div className="m-auto flex h-full w-4/5 max-w-default flex-col justify-around md:w-3/5 lg:w-1/2">
         <div className={`align-center z-20 ${menu ? "hidden" : ""}`}>
           <h1 className="mb-4 text-center font-minion text-3xl font-medium text-white lg:mb-4 lg:text-2xl">
-            welcome to
+            Welcome to
           </h1>
           <h1 className="text mb-4 text-center font-minion text-3xl font-bold text-white lg:mb-12 lg:text-7xl">
             Wind West Cafe!
