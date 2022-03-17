@@ -22,7 +22,7 @@ export default function Document() {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        <meta property="og:image" content="/logo.jpg" />
+        <meta property="og:image" content="/images/logo.png" />
 
         <meta
           name="description"
