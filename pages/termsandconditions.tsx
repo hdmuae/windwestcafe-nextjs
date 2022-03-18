@@ -8,10 +8,10 @@ const Terms: React.FC = () => {
     <div>
       <Nav fixed={false} bg={true} />
       <div className="m-auto flex">
-        <div className="sticky top-0 h-full w-1/2">
+        <div className="sticky top-0 hidden h-full w-1/2 lg:block">
           <img src="/images/coffeeterms.jpg" alt="coffee background" />
         </div>
-        <div className="mx-20 mb-20 w-1/2 font-minion text-xl">
+        <div className="mx-8 mb-20 w-full font-minion text-xl lg:mx-20 lg:w-1/2">
           <h1 className="text my-20 font-minion text-3xl font-bold lg:mb-12 lg:text-5xl">
             Terms and Conditions
           </h1>
