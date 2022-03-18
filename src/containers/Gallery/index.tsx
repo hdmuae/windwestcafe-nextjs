@@ -5,25 +5,27 @@ export const Gallery: React.FC = () => {
   const data = [
     {
       id: 1,
-      rounded: "rounded-tl-3xl",
+      rounded: "rounded-3xl lg:rounded-none lg:rounded-tl-3xl",
     },
     {
       id: 3,
+      rounded: "rounded-3xl lg:rounded-none",
     },
     {
       id: 5,
-      rounded: "rounded-tr-3xl",
+      rounded: "rounded-3xl lg:rounded-none lg:rounded-tr-3xl",
     },
     {
       id: 7,
-      rounded: "rounded-bl-3xl",
+      rounded: "rounded-3xl lg:rounded-none lg:rounded-bl-3xl",
     },
     {
       id: 9,
+      rounded: "rounded-3xl lg:rounded-none",
     },
     {
       id: 13,
-      rounded: "rounded-br-3xl",
+      rounded: "rounded-3xl lg:rounded-none lg:rounded-br-3xl",
     },
   ];
 
@@ -39,7 +41,6 @@ export const Gallery: React.FC = () => {
             <Image
               width="790"
               height="450"
-              // className="transition-all duration-500 ease-in-out group-hover:scale-150"
               className={rounded}
               src={`/images/${id}.png`}
               alt="Coffee"

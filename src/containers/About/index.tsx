@@ -5,7 +5,7 @@ export const About: React.FC = () => {
   return (
     <section
       id="about"
-      className="relative h-[850px] bg-darkblue bg-[url('/images/coffee.png')] bg-cover"
+      className="relative h-[700px] bg-[url('/images/mobile/coffee.png')] bg-[length:100%_700px] lg:h-[850px] lg:bg-darkblue lg:bg-[url('/images/coffee.png')] lg:bg-cover"
     >
       {/* <Image
         className="z-0"

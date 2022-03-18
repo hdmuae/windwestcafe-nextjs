@@ -5,13 +5,11 @@ interface myProps {
   id: number;
   img: string;
   active: number;
-  setActive: (x: number) => void;
 }
 
-const Card: React.FC<myProps> = ({ id, active, setActive, img }) => {
+const Card: React.FC<myProps> = ({ id, active, img }) => {
   return (
     <div
-      onClick={() => setActive(active === id ? -1 : id)}
       className={`${
         active === id
           ? "h-[580px] w-full bg-primary md:h-[550px]"

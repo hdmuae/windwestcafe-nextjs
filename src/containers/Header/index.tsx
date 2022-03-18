@@ -5,17 +5,6 @@ import Instagram from "../../../public/svg/Instagram-white.svg";
 import Tripadvisor from "../../../public/svg/Tripadvisor-white.svg";
 import Image from "next/image";
 
-const styles: React.CSSProperties = {
-  top: 0,
-  left: 0,
-  right: 0,
-  bottom: 0,
-  zIndex: 10,
-  width: "100%",
-  objectFit: "cover",
-  position: "absolute",
-};
-
 export const Header: React.FC = () => {
   const [menu, setMenu] = React.useState(false);
   const [isVisible, setIsVisible] = React.useState(false);
@@ -45,13 +34,14 @@ export const Header: React.FC = () => {
       id="welcome"
       // @ts-ignore
       ref={containerRef}
-      className={`"text-white -z-10 h-screen ${
+      className={`"relative h-screen text-white ${
         menu ? "fade-in-out bg-primary duration-700" : "bg-darkblue"
       }`}
     >
       <video
-        className={`mx-auto ${menu ? "hidden" : "block"}`}
-        style={styles}
+        className={`mx-auto ${
+          menu ? "hidden" : "block"
+        } absolute top-0 left-0 right-0 bottom-0 h-full object-cover lg:h-auto`}
         autoPlay
         loop
         muted
@@ -67,7 +57,7 @@ export const Header: React.FC = () => {
           <h1 className="mb-4 text-center font-minion text-3xl font-medium text-white lg:mb-4 lg:text-2xl">
             Welcome to
           </h1>
-          <h1 className="text mb-4 text-center font-minion text-3xl font-bold text-white lg:mb-12 lg:text-7xl">
+          <h1 className="mb-4 text-center font-minion text-5xl font-bold text-white lg:mb-12 lg:text-7xl">
             Wind West Cafe!
           </h1>
         </div>
@@ -77,19 +67,34 @@ export const Header: React.FC = () => {
             menu ? "" : "hidden items-center"
           }`}
         >
-          <a className="mb-2 text-xl hover:border-b-2" href="#about">
+          <a
+            className="mb-2 font-minion text-2xl font-bold hover:border-b-2"
+            href="#about"
+          >
             About Us
           </a>
-          <a className="mb-2 text-xl hover:border-b-2" href="#menu">
+          <a
+            className="mb-2 font-minion text-2xl font-bold hover:border-b-2"
+            href="#menu"
+          >
             Our Menu
           </a>
-          <a className="mb-2 text-xl hover:border-b-2" href="#shop">
+          <a
+            className="mb-2 font-minion text-2xl font-bold hover:border-b-2"
+            href="#shop"
+          >
             Shop Dersut
           </a>
-          <a className="mb-2 text-xl hover:border-b-2" href="#gallery">
+          <a
+            className="mb-2 font-minion text-2xl font-bold hover:border-b-2"
+            href="#gallery"
+          >
             Gallery
           </a>
-          <a className="mb-6 text-xl hover:border-b-2" href="#contact">
+          <a
+            className="mb-6 font-minion text-2xl font-bold hover:border-b-2"
+            href="#contact"
+          >
             Contact Us
           </a>
 

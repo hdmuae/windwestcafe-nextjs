@@ -4,10 +4,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
 
 export const Shop: React.FC = () => {
-  const [active, setActive] = React.useState(1);
-
   // install Swiper modules
   SwiperCore.use([Navigation]);
+
   return (
     <section id="shop" className="m-auto mt-20 w-4/5 max-w-default">
       <div className="overflow-x-hidden pt-8">
@@ -15,12 +14,27 @@ export const Shop: React.FC = () => {
           Shop Dersut
         </h1>
 
+        {/* <button
+          className="mb-40 border border-blue-400 py-3 px-12"
+          // @ts-ignore
+          onClick={() => mySwiper.slideNext()}
+        >
+          Slide to the next slide
+        </button>
+        <button
+          className="border border-blue-400 py-3 px-12"
+          // @ts-ignore
+          onClick={() => mySwiper.slidePrev()}
+        >
+          Slide to the next slide
+        </button> */}
         <Swiper
           style={{ overflow: "visible" }}
           initialSlide={2}
           slidesPerView={3}
           centeredSlides={true}
           navigation={true}
+          pagination={{ clickable: true }}
           breakpoints={{
             0: {
               slidesPerView: 1,
@@ -37,48 +51,17 @@ export const Shop: React.FC = () => {
           }}
           className="mySwiper mb-20"
         >
-          <SwiperSlide>
-            <Card
-              id={0}
-              active={active}
-              setActive={setActive}
-              img="/images/image_coffee.png"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card
-              id={1}
-              active={active}
-              setActive={setActive}
-              img="/images/image_coffee.png"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card
-              id={2}
-              active={active}
-              setActive={setActive}
-              img="/images/image_coffee.png"
-            />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <Card
-              id={3}
-              active={active}
-              setActive={setActive}
-              img="/images/image_coffee.png"
-            />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <Card
-              id={4}
-              active={active}
-              setActive={setActive}
-              img="/images/image_coffee.png"
-            />
-          </SwiperSlide>
+          {[0, 1, 2, 3, 4].map((idx, key) => (
+            <SwiperSlide key={key}>
+              {({ isActive }) => (
+                <Card
+                  id={idx}
+                  active={isActive ? idx : -1}
+                  img="/images/image_coffee.png"
+                />
+              )}
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </section>

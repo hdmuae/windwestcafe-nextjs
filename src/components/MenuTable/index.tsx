@@ -73,7 +73,7 @@ const Menu: React.FC = () => {
         </div>
       </div>
 
-      <div className="m-auto w-10/12">
+      <div className="m-auto w-11/12">
         <MenuRecord
           name="Cappuchino"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."

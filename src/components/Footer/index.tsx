@@ -11,8 +11,8 @@ const Footer: React.FC = () => {
             <a>
               <Image
                 width="160"
-                height="60"
-                src="/svg/Logo.svg"
+                height="140"
+                src="/images/vertical_logo.png"
                 alt="Wind West Cafe Logo"
               />
             </a>
@@ -92,9 +92,9 @@ const Footer: React.FC = () => {
         <Link href="/#welcome">
           <a>
             <Image
-              src="/svg/logo.svg"
+              src="/images/vertical_logo.png"
               width="200px"
-              height="120px"
+              height="160px"
               alt="Wind West Cafe Logo"
             />
           </a>
