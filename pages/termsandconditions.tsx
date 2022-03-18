@@ -5,13 +5,13 @@ import Image from "next/image";
 
 const Terms: React.FC = () => {
   return (
-    <div className="h-screen">
+    <div>
       <Nav fixed={false} bg={true} />
       <div className="m-auto flex">
-        <div className="h-full w-1/2">
+        <div className="sticky top-0 h-full w-1/2">
           <img src="/images/coffeeterms.jpg" alt="coffee background" />
         </div>
-        <div className="mx-20 h-screen w-1/2 font-minion text-xl">
+        <div className="mx-20 mb-20 w-1/2 font-minion text-xl">
           <h1 className="text my-20 font-minion text-3xl font-bold lg:mb-12 lg:text-5xl">
             Terms and Conditions
           </h1>
