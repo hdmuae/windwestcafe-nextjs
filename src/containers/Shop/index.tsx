@@ -35,6 +35,7 @@ export const Shop: React.FC = () => {
           centeredSlides={true}
           navigation={true}
           pagination={{ clickable: true }}
+          autoplay={{ delay: 2500 }}
           breakpoints={{
             0: {
               slidesPerView: 1,
