@@ -49,7 +49,7 @@ export const ContactUs: React.FC = () => {
       id="contact"
       className="bg-[url('/images/mobile/background_contact.png')] bg-cover pt-32 lg:bg-[url('/images/background_contact.png')]"
     >
-      <div className="m-auto mb-12 w-11/12 max-w-default lg:w-4/5">
+      <div className="m-auto  w-11/12 max-w-default lg:w-4/5">
         <h1 className="mb-12 font-minion text-5xl font-bold text-white lg:text-title">
           Contact Us
         </h1>
@@ -60,7 +60,7 @@ export const ContactUs: React.FC = () => {
           <div className="mb-4">
             <input
               {...register("name")}
-              className="w-full rounded-xl border bg-transparent p-4 font-nexa placeholder:text-white"
+              className="w-full rounded-xl border bg-transparent p-4 font-nexa text-white outline-none placeholder:text-white"
               placeholder="Your name"
             />
           </div>
@@ -68,7 +68,7 @@ export const ContactUs: React.FC = () => {
           <div className="mb-4 w-full">
             <input
               {...register("email")}
-              className="w-full rounded-xl border bg-transparent p-4 font-nexa placeholder:text-white"
+              className="w-full rounded-xl border bg-transparent p-4 font-nexa text-white outline-none placeholder:text-white"
               placeholder="Your email"
             />
           </div>
@@ -76,7 +76,7 @@ export const ContactUs: React.FC = () => {
           <div className="mb-4 w-full">
             <input
               {...register("number")}
-              className="w-full rounded-xl border bg-transparent p-4 font-nexa placeholder:text-white"
+              className="w-full rounded-xl border bg-transparent p-4 font-nexa text-white outline-none placeholder:text-white"
               placeholder="Your number"
             />
           </div>
@@ -85,7 +85,7 @@ export const ContactUs: React.FC = () => {
             <textarea
               rows={6}
               {...register("message")}
-              className="w-full rounded-xl border bg-transparent p-3 font-nexa placeholder:text-white"
+              className="w-full rounded-xl border bg-transparent p-3 font-nexa text-white outline-none placeholder:text-white"
               placeholder="Your message"
             />
           </div>
@@ -97,7 +97,9 @@ export const ContactUs: React.FC = () => {
         <ToastContainer />
       </div>
 
-      <Footer />
+      <div className="hidden lg:block">
+        <Footer dark={false} />
+      </div>
     </section>
   );
 };

@@ -8,7 +8,7 @@ import {
   About,
   ContactUs,
 } from "../src/containers";
-
+import Footer from "../src/components/Footer";
 const Home: NextPage = () => {
   return (
     <>
@@ -23,6 +23,9 @@ const Home: NextPage = () => {
       <Shop />
       <Gallery />
       <ContactUs />
+      <div className="block lg:hidden">
+        <Footer dark={true} />
+      </div>
     </>
   );
 };

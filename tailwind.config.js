@@ -25,6 +25,7 @@ module.exports = {
         primary: "#29376D",
         secondary: "#E5E5E5",
         darkblue: "#010101",
+        footer: "#070F2E",
       },
       translate: {
         4: "-4rem",
