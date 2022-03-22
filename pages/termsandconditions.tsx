@@ -255,7 +255,7 @@ const Terms: React.FC = () => {
           </ol>
         </div>
       </div>
-      <Footer />
+      <Footer dark={false} />
     </div>
   );
 };
