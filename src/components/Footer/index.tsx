@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Footer: React.FC<{ dark: boolean }> = ({ dark }) => {
-  console.log(dark);
   return (
     <footer className={`${dark ? "bg-footer" : "bg-black bg-opacity-60"} `}>
       <div className="m-auto w-4/5 py-12">

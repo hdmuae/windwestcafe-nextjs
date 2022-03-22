@@ -54,7 +54,7 @@ const Menu: React.FC = () => {
         </h1>
       </div>
 
-      <div className="mb-6 flex items-center justify-between rounded-3xl bg-primary py-4 px-6 md:hidden">
+      {/* <div className="mb-6 flex items-center justify-between rounded-3xl bg-primary py-4 px-6 md:hidden">
         <div>
           <Image
             src="/svg/left-arrow.svg"
@@ -77,11 +77,12 @@ const Menu: React.FC = () => {
             onClick={() => editCategory(true)}
           />
         </div>
-      </div>
+      </div> */}
 
-      {/* <div className="mb-6 md:hidden">
+      <div className="mb-6 md:hidden">
         <Swiper
           initialSlide={1}
+          centeredSlides
           slidesPerView={2}
           className="mySwiper"
           slideToClickedSlide={true}
@@ -90,8 +91,8 @@ const Menu: React.FC = () => {
             <SwiperSlide key={key}>
               {({ isActive }) => (
                 <div
-                  className={`mr-4 flex justify-center whitespace-nowrap rounded-3xl bg-primary py-4 font-minion font-bold text-white ${
-                    isActive ? "" : "opacity-40"
+                  className={`mr-4 flex justify-center whitespace-nowrap rounded-2xl bg-primary py-4 font-minion font-bold text-white ${
+                    isActive ? "bg-primary" : "bg-primary opacity-40"
                   }`}
                 >
                   <p>{name}</p>
@@ -100,7 +101,7 @@ const Menu: React.FC = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div> */}
+      </div>
 
       <div className="m-auto w-11/12">
         <MenuRecord
