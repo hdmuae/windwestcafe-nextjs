@@ -47,10 +47,12 @@ export const ContactUs: React.FC = () => {
   return (
     <section
       id="contact"
-      className="bg-[url('/images/background_contact.png')] bg-cover pt-32"
+      className="bg-[url('/images/mobile/background_contact.png')] bg-cover pt-32 lg:bg-[url('/images/background_contact.png')]"
     >
-      <div className="m-auto mb-12 w-4/5 max-w-default">
-        <h1 className="mb-12 text-5xl text-white lg:text-title">Contact Us</h1>
+      <div className="m-auto mb-12 w-11/12 max-w-default lg:w-4/5">
+        <h1 className="mb-12 font-minion text-5xl font-bold text-white lg:text-title">
+          Contact Us
+        </h1>
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="m-auto mt-6 lg:m-0 lg:w-2/5"
@@ -88,7 +90,7 @@ export const ContactUs: React.FC = () => {
             />
           </div>
 
-          <button className="bg- w-full rounded-xl bg-primary p-3 font-nexa text-lg font-bold text-white">
+          <button className="mb-12 w-full rounded-xl bg-primary p-3 font-nexa text-lg font-bold text-white">
             Submit
           </button>
         </form>

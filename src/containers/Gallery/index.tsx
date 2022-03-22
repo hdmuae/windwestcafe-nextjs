@@ -30,7 +30,10 @@ export const Gallery: React.FC = () => {
   ];
 
   return (
-    <section id="gallery" className="m-auto w-4/5 max-w-default py-32">
+    <section
+      id="gallery"
+      className="m-auto w-11/12 max-w-default py-32 lg:w-4/5"
+    >
       <h1 className="mb-8 font-minion text-5xl font-bold lg:mb-12 lg:text-title">
         Gallery
       </h1>

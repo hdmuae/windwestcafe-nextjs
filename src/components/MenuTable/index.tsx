@@ -1,7 +1,11 @@
 import * as React from "react";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Pagination } from "swiper";
 
 const Menu: React.FC = () => {
+  SwiperCore.use([Navigation, Pagination]);
+
   const [category, setCategory] = React.useState(0);
 
   const categories = ["BREAKFAST", "HOT DRINKS", "DESSERT", "COLD DRINKS"];
@@ -18,16 +22,18 @@ const Menu: React.FC = () => {
     description: string;
     price: number;
   }> = ({ name, description, price }) => (
-    <div className="mb-4 border-b-2 border-gray-300 pb-2">
-      <div className="flex justify-between">
+    <div className="mb-4 flex items-center justify-between border-b-2 border-gray-300 pb-2">
+      <div className="flex w-3/4 flex-col justify-between">
         <p className="mb-2 font-minion text-2xl font-bold">{name}</p>
-        <p className="font-minion text-2xl font-bold md:w-1/4 md:text-right">
+        <p className="w-3/4 font-nexa text-sm font-light text-primary opacity-50 lg:w-full">
+          {description}
+        </p>
+      </div>
+      <div className="w-1/4">
+        <p className="font-minion text-2xl font-bold md:text-right">
           {price} AED
         </p>
       </div>
-      <p className="font-nexa text-sm font-light text-primary opacity-50">
-        {description}
-      </p>
     </div>
   );
 
@@ -72,6 +78,29 @@ const Menu: React.FC = () => {
           />
         </div>
       </div>
+
+      {/* <div className="mb-6 md:hidden">
+        <Swiper
+          initialSlide={1}
+          slidesPerView={2}
+          className="mySwiper"
+          slideToClickedSlide={true}
+        >
+          {categories.map((name, key) => (
+            <SwiperSlide key={key}>
+              {({ isActive }) => (
+                <div
+                  className={`mr-4 flex justify-center whitespace-nowrap rounded-3xl bg-primary py-4 font-minion font-bold text-white ${
+                    isActive ? "" : "opacity-40"
+                  }`}
+                >
+                  <p>{name}</p>
+                </div>
+              )}
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div> */}
 
       <div className="m-auto w-11/12">
         <MenuRecord

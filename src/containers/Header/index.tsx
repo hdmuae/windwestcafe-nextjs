@@ -60,6 +60,29 @@ export const Header: React.FC = () => {
           <h1 className="mb-4 text-center font-minion text-5xl font-bold text-white lg:mb-12 lg:text-7xl">
             Wind West Cafe!
           </h1>
+          <div className="m-auto mt-20 flex w-1/2 justify-between lg:hidden">
+            <Image
+              className="cursor-pointer"
+              width={32}
+              height={32}
+              src="/svg/fb.svg"
+              alt="Facebook icon"
+            />
+            <Image
+              className="cursor-pointer"
+              width={32}
+              height={32}
+              src="/svg/inst.svg"
+              alt="Instagram icon"
+            />
+            <Image
+              className="cursor-pointer"
+              width={32}
+              height={32}
+              src="/svg/ta.svg"
+              alt="Tripadvisor icon"
+            />
+          </div>
         </div>
 
         <div
@@ -101,17 +124,23 @@ export const Header: React.FC = () => {
           <div className="flex w-48 justify-between">
             <Image
               className="cursor-pointer"
-              src={Facebook}
+              width={20}
+              height={20}
+              src="/svg/Facebook-white.svg"
               alt="Facebook icon"
             />
             <Image
               className="cursor-pointer"
-              src={Instagram}
+              width={20}
+              height={20}
+              src="/svg/Instagram-white.svg"
               alt="Instagram icon"
             />
             <Image
               className="cursor-pointer"
-              src={Tripadvisor}
+              width={20}
+              height={20}
+              src="/svg/Tripadvisor-white.svg"
               alt="Tripadvisor icon"
             />
           </div>

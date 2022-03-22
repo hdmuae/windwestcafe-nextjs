@@ -1,14 +1,14 @@
 import * as React from "react";
 import Card from "../../components/Card";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation } from "swiper";
+import SwiperCore, { Navigation, Pagination } from "swiper";
 
 export const Shop: React.FC = () => {
   // install Swiper modules
-  SwiperCore.use([Navigation]);
+  SwiperCore.use([Navigation, Pagination]);
 
   return (
-    <section id="shop" className="m-auto mt-20 w-4/5 max-w-default">
+    <section id="shop" className="m-auto mt-20 w-11/12 max-w-default lg:w-4/5">
       <div className="overflow-x-hidden pt-8">
         <h1 className="pb-28 font-minion text-5xl font-bold lg:text-title">
           Shop Dersut
@@ -34,8 +34,9 @@ export const Shop: React.FC = () => {
           slidesPerView={3}
           centeredSlides={true}
           navigation={true}
-          pagination={{ clickable: true }}
-          autoplay={{ delay: 2500 }}
+          pagination={true}
+          slideToClickedSlide={true}
+          autoplay={{ delay: 4000 }}
           breakpoints={{
             0: {
               slidesPerView: 1,
