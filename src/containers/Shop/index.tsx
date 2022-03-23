@@ -30,6 +30,7 @@ export const Shop: React.FC = () => {
         </button> */}
         <Swiper
           style={{ overflow: "visible" }}
+          loop={true}
           initialSlide={2}
           slidesPerView={3}
           centeredSlides={true}
