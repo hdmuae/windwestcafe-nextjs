@@ -41,16 +41,16 @@ const Menu: React.FC = () => {
     <div className="flex flex-col lg:flex-row">
       <div className="mr-12 hidden h-[400px] w-1/4 flex-col justify-around rounded-3xl bg-primary py-16 px-12 md:flex">
         <h1 className="mb-0 cursor-pointer font-minion text-xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
-          BREAKFAST
+          COFFEE
         </h1>
         <h1 className="text-underline mb-0 cursor-pointer font-minion text-xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
-          HOT DRINKS
+          FILTER COFFEE
         </h1>
         <h1 className="hover:text-underline mb-0 cursor-pointer font-minion text-xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
-          DESSERT
+          AVANTCHA TEA
         </h1>
         <h1 className="hover:text-underline cursor-pointer font-minion text-xl font-bold text-white decoration-1 hover:underline lg:text-[32px]">
-          COLD DRINKS
+          FRESH JUICES
         </h1>
       </div>
 
