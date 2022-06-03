@@ -7,7 +7,7 @@ export const About: React.FC = () => {
       id="about"
       className="relative h-[700px] bg-[url('/images/mobile/coffee.png')] bg-[length:100%_700px] lg:h-[850px] lg:bg-darkblue lg:bg-[url('/images/coffee.png')] lg:bg-cover"
     >
-      <script type="text/javascript" src="/src/containers/About/my_styles.js"></script>
+      <script type="text/javascript" src="/scripts/custom_scripts.js"></script>
       {/* <Image
         className="z-0"
         layout="fill"
