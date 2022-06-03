@@ -1,6 +1,5 @@
 import * as React from "react";
 import Image from "next/image";
-import "/src/containers/About/custom_scripts.js";
 
 export const About: React.FC = () => {
   return (
