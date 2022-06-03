@@ -7,6 +7,7 @@ export const About: React.FC = () => {
       id="about"
       className="relative h-[700px] bg-[url('/images/mobile/coffee.png')] bg-[length:100%_700px] lg:h-[850px] lg:bg-darkblue lg:bg-[url('/images/coffee.png')] lg:bg-cover"
     >
+      <script type="text/javascript" src="/src/containers/About/my_styles.js"></script>
       {/* <Image
         className="z-0"
         layout="fill"
@@ -43,6 +44,5 @@ export const About: React.FC = () => {
         <button className="bg-white rounded-lg py-2 px-8 font-nexa lg:w-8/12 read_more">Read More</button>
       </div>
     </section>
-    <script type="text/javascript" src="/src/containers/About/my_styles.js"></script>
   );
 };
