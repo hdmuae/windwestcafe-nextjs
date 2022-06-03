@@ -18,7 +18,7 @@ export const About: React.FC = () => {
         <h1 className="z-10 pt-12 pb-12 font-minion text-4xl font-bold text-white lg:text-title">
           About us
         </h1>
-        <p className="z-10 w-full font-nexa text-lg text-white lg:w-8/12 lg:text-[32px]">
+        <p className="z-10 w-full font-nexa text-lg text-white lg:w-8/12">
           Welcome to the Wind West Cafe!
         </p>
         <p className="z-10 w-full font-nexa text-lg text-white lg:w-8/12">
