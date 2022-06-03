@@ -43,5 +43,6 @@ export const About: React.FC = () => {
         <button className="bg-white rounded-lg py-2 px-8 font-nexa lg:w-8/12 read_more">Read More</button>
       </div>
     </section>
+    <script type="text/javascript" src="/src/containers/About/my_styles.js"></script>
   );
 };
