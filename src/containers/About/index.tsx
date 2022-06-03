@@ -28,6 +28,7 @@ export const About: React.FC = () => {
           you and make your life better because you are worthy to drink the
           delicious coffee.
         </p>
+        <a href="#" class="more_about">Read more</a>
       </div>
     </section>
   );
