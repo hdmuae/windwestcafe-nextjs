@@ -40,7 +40,7 @@ export const About: React.FC = () => {
           favorite desserts and handmade chocolate. Moreover we are official distributor of Dersut in UAE, the selection of products you can find 
           in our <a href="#">Shop</a>.
         </p>
-        <button className="bg-white rounded-lg py-2 px-8 font-nexa lg:w-8/12 read_more">Read More</button>
+        <button className="bg-white rounded-lg py-2 px-8 font-nexa lg:w-8/12 read_more hidden_text">Read More</button>
       </div>
       <script type="text/javascript" src="/scripts/custom_scripts.js"></script>
     </section>
