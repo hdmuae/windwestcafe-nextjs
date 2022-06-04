@@ -1,5 +1,7 @@
-var readMoreBtn = document.getElementsByClassName('read_more');
-readMoreBtn.onclick = function() {
-  var hiddenText = document.getElementsByClassName('hidden');
-  hiddenText.classList.remove("hidden");
-};
+var clickBtn = document.querySelector('.read_more');
+clickBtn.addEventListener("click", function() {
+  var elements = document.querySelectorAll(".hidden");
+  elements.forEach(function(element) {
+    element.classList.remove("hidden");
+  });
+})
