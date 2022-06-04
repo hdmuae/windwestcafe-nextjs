@@ -7,7 +7,15 @@ export const About: React.FC = () => {
       id="about"
       className="relative h-[700px] bg-[url('/images/mobile/coffee.png')] bg-[length:100%_700px] lg:h-[850px] lg:bg-darkblue lg:bg-[url('/images/coffee.png')] lg:bg-cover"
     >
-      <script type="text/javascript" src="/scripts/custom_scripts.js"></script>
+      <script type="text/javascript">
+        var clickBtn = document.querySelector('.read_more');
+        clickBtn.addEventListener("click", function() {
+          var elements = document.querySelectorAll(".hidden");
+          elements.forEach(function(element) {
+            element.classList.remove("hidden");
+          });
+        })
+      </script>
       {/* <Image
         className="z-0"
         layout="fill"
