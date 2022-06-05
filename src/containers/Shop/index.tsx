@@ -10,9 +10,13 @@ export const Shop: React.FC = () => {
   return (
     <section id="shop" className="m-auto mt-20 w-11/12 max-w-default lg:w-4/5">
       <div className="overflow-x-hidden pt-8">
-        <h1 className="pb-28 font-minion text-5xl font-bold lg:text-title">
+        <h1 className="pb-12 font-minion text-5xl font-bold lg:text-title">
           Shop Dersut
         </h1>
+          <p className="z-10 w-full font-nexa text-lg lg:w-8/12 mb-36">We have had a passion for quality coffee and
+              offering you an outstanding coffee experience: gourmet and tasty coffees with top quality Dersut coffee
+              beans.
+          </p>
 
         {/* <button
           className="mb-40 border border-blue-400 py-3 px-12"
