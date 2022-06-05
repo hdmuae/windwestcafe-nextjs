@@ -39,6 +39,10 @@
   src: url("../public/fonts/Minion-Variable-Concept.otf");
   font-display: swap;
 }
+.scrollable_menu {
+  max-height: 704px;
+  overflow: scroll;
+}
 
 /* .parent {
   width: 400px;

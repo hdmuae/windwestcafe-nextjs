@@ -2,6 +2,14 @@ import * as React from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
+import Coffee from './coffee-menu';
+import FilterCoffee from './filter-coffee-menu';
+import SpecialCoctails from './special-coctails-menu';
+import AvantchaTea from './avantcha-tea-menu';
+import FreshJuices from './fresh-juices-menu';
+import Smoothies from './smoothies-menu';
+import Pastries from './pastries-menu';
+import {useState} from "react";
 
 const Menu: React.FC = () => {
   SwiperCore.use([Navigation, Pagination]);
@@ -55,31 +63,34 @@ const Menu: React.FC = () => {
         </div>
       </div>
   );
-
+  const [active, setActive] = useState("Coffee");
   return (
     <div className="flex flex-col lg:flex-row">
       <div className="mr-12 hidden w-1/4 flex-col justify-around rounded-3xl bg-primary py-16 px-12 md:flex">
-        <h1 className="mb-0 cursor-pointer font-minion text-xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+        <h1 onClick={() => setActive("Coffee")} className="mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
           COFFEE
         </h1>
-        <h1 className="text-underline mb-0 cursor-pointer font-minion text-xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+        <h1 onClick={() => setActive("FilterCoffee")} className="text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
           FILTER COFFEE
         </h1>
-        <h1 className="hover:text-underline mb-0 cursor-pointer font-minion text-xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+        <h1 onClick={() => setActive("SpecialCoctails")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
           DERSUT SPECIAL COCKTAILS
         </h1>
-        <h1 className="hover:text-underline mb-0 cursor-pointer font-minion text-xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+        <h1 onClick={() => setActive("AvantchaTea")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
           AVANTCHA TEA
         </h1>
-        <h1 className="hover:text-underline mb-0 cursor-pointer font-minion text-xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+        <h1 onClick={() => setActive("FreshJuices")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
           FRESH JUICES
         </h1>
-        <h1 className="hover:text-underline mb-0 cursor-pointer font-minion text-xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+        <h1 onClick={() => setActive("Smoothies")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
           SMOOTHIES
         </h1>
-        <h1 className="hover:text-underline mb-0 cursor-pointer font-minion text-xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
-          DESSERTS & PASTRIES
+        <h1 onClick={() => setActive("Pastries")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+          PASTRIES
         </h1>
+        {/*<h1 className="hover:text-underline mb-0 cursor-pointer font-minion text-xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">*/}
+          {/*DESSERTS*/}
+        {/*</h1>*/}
       </div>
 
       {/* <div className="mb-6 flex items-center justify-between rounded-3xl bg-primary py-4 px-6 md:hidden">
@@ -131,85 +142,16 @@ const Menu: React.FC = () => {
         </Swiper>
       </div>
 
-      <div className="m-auto w-11/12">
-        <MenuRecord
-          name="Espresso"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          price={18}
-        />
-        <SubMenuRecord
-            name="Double"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            price={22}
-        />
-        <SubMenuRecord
-            name="Freddo"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            price={23}
-        />
-        <SubMenuRecord
-            name="Tonic"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            price={27}
-        />
-        <MenuRecord
-          name="Americano"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          price={18}
-        />
-        <MenuRecord
-          name="Cappuccino"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor"
-          price={21}
-        />
-        <SubMenuRecord
-            name="Freddo"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            price={24}
-        />
-        <MenuRecord
-          name="Late"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          price={22}
-        />
-        <SubMenuRecord
-            name="Iced"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            price={22}
-        />
-        <SubMenuRecord
-            name="Spanish"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            price={26}
-        />
-        <SubMenuRecord
-            name="Vanilla"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            price={24}
-        />
-        <MenuRecord
-          name="Flat White"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor"
-          price={25}
-        />
-        <SubMenuRecord
-            name="Freddo"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            price={27}
-        />
-        <MenuRecord
-            name="Flat White"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor"
-            price={25}
-        />
-        <MenuRecord
-            name="Cacao"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor"
-            price={22}
-        />
+      <div className="m-auto w-11/12 scrollable_menu">
+        {active === "Coffee" && <Coffee/>}
+        {active === "FilterCoffee" && <FilterCoffee/>}
+        {active === "SpecialCoctails" && <SpecialCoctails/>}
+        {active === "AvantchaTea" && <AvantchaTea/>}
+        {active === "FreshJuices" && <FreshJuices/>}
+        {active === "Smoothies" && <Smoothies/>}
+        {active === "Pastries" && <Pastries/>}
       </div>
     </div>
   );
 };
-
 export default Menu;
