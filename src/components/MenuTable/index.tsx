@@ -16,7 +16,8 @@ const Menu: React.FC = () => {
 
   const [category, setCategory] = React.useState(0);
 
-  const categories = ["BREAKFAST", "HOT DRINKS", "DESSERT", "COLD DRINKS"];
+  const categories = ["Coffee", "FILTER COFFEE", "SPECIAL COCKTAILS", "AVANTCHA TEA", "FRESH JUICES",
+    "SMOOTHIES", "Pastries"];
   const editCategory = (change: boolean) => {
     if (change) {
       category === 3 ? setCategory(0) : setCategory(category + 1);
@@ -134,7 +135,7 @@ const Menu: React.FC = () => {
                     isActive ? "bg-primary" : "bg-primary opacity-40"
                   }`}
                 >
-                  <p>{name}</p>
+                  <p onClick={() => setActive(name)}>{name}</p>
                 </div>
               )}
             </SwiperSlide>
