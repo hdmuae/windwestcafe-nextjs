@@ -21,7 +21,7 @@ const Footer: React.FC<{ dark: boolean }> = ({ dark }) => {
           {/* Column 1 */}
           <div className="flex flex-col">
             <h1 className="mb-3 text-lg font-bold">Know Wind West Cafe</h1>
-            <Link href="/#">
+            <Link href="/#about">
               <a className="pb-2 text-center hover:font-bold lg:text-left">
                 About Us
               </a>
