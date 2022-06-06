@@ -1,24 +1,26 @@
 import * as React from "react";
 import Card from "../../components/Card";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination } from "swiper";
+import {Swiper, SwiperSlide} from "swiper/react";
+import SwiperCore, {Navigation, Pagination} from "swiper";
 
 export const Shop: React.FC = () => {
-  // install Swiper modules
-  SwiperCore.use([Navigation, Pagination]);
+    // install Swiper modules
+    SwiperCore.use([Navigation, Pagination]);
 
-  return (
-    <section id="shop" className="m-auto mt-20 w-11/12 max-w-default lg:w-4/5">
-      <div className="overflow-x-hidden pt-8">
-        <h1 className="pb-12 font-minion text-5xl font-bold lg:text-title">
-          Shop Dersut
-        </h1>
-          <p className="z-10 w-full font-nexa text-lg lg:w-8/12 mb-36">We have had a passion for quality coffee and
-              offering you an outstanding coffee experience: gourmet and tasty coffees with top quality Dersut coffee
-              beans.
-          </p>
+    return (
+        <section id="shop" className="m-auto mt-20 w-11/12 max-w-default lg:w-4/5">
+            <div className="overflow-x-hidden pt-8">
+                <h1 className="pb-12 font-minion text-5xl font-bold lg:text-title">
+                    Shop Dersut
+                </h1>
+                <p className="z-10 w-full font-nexa text-lg lg:w-8/12 mb-36">We have had a passion for quality coffee
+                    and
+                    offering you an outstanding coffee experience: gourmet and tasty coffees with top quality Dersut
+                    coffee
+                    beans.
+                </p>
 
-        {/* <button
+                {/* <button
           className="mb-40 border border-blue-400 py-3 px-12"
           // @ts-ignore
           onClick={() => mySwiper.slideNext()}
@@ -32,45 +34,82 @@ export const Shop: React.FC = () => {
         >
           Slide to the next slide
         </button> */}
-        <Swiper
-          style={{ overflow: "visible" }}
-          loop={true}
-          initialSlide={2}
-          slidesPerView={3}
-          centeredSlides={true}
-          navigation={true}
-          pagination={true}
-          slideToClickedSlide={true}
-          autoplay={{ delay: 4000 }}
-          breakpoints={{
-            0: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 20,
-            },
-          }}
-          className="mySwiper mb-20"
-        >
-          {[0, 1, 2, 3, 4].map((idx, key) => (
-            <SwiperSlide key={key}>
-              {({ isActive }) => (
-                <Card
-                  id={idx}
-                  active={isActive ? idx : -1}
-                  img="/images/image_coffee.png"
-                />
-              )}
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-    </section>
-  );
+                <Swiper
+                    style={{overflow: "visible"}}
+                    loop={true}
+                    initialSlide={2}
+                    slidesPerView={3}
+                    centeredSlides={true}
+                    navigation={true}
+                    pagination={true}
+                    slideToClickedSlide={true}
+                    autoplay={{delay: 4000}}
+                    breakpoints={{
+                        0: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
+                        320: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 20,
+                        },
+                    }}
+                    className="mySwiper mb-20"
+                >
+                    {[0].map((idx, key) => (
+                        <SwiperSlide key={key}>
+                            {({isActive}) => (
+                                <Card
+                                    id={idx}
+                                    active={isActive ? idx : -1}
+                                    img="/images/image_coffee.png"
+                                    name="test name"
+                                    aroma="90"
+                                    intensity="70"
+                                    description="100% Arabica with a light, delicate taste. 1000 g pack of beans."
+                                    link="https://google.com"
+                                />
+                            )}
+                        </SwiperSlide>
+                    ))}
+                    {[1].map((idx, key) => (
+                        <SwiperSlide key={key}>
+                            {({isActive}) => (
+                                <Card
+                                    id={idx}
+                                    active={isActive ? idx : -1}
+                                    img="/images/9.png"
+                                    name="test name"
+                                    aroma="90"
+                                    intensity="70"
+                                    description="100% Arabica with a light, delicate taste. 1000 g pack of beans."
+                                    link="https://google2.com"
+                                />
+                            )}
+                        </SwiperSlide>
+                    ))}
+                    {[2].map((idx, key) => (
+                        <SwiperSlide key={key}>
+                            {({isActive}) => (
+                                <Card
+                                    id={idx}
+                                    active={isActive ? idx : -1}
+                                    img="/images/3.png"
+                                    name="test name"
+                                    aroma="90"
+                                    intensity="70"
+                                    description="100% Arabica with a light, delicate taste. 1000 g pack of beans."
+                                    link="https://google3.com"
+                                />
+                            )}
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
+        </section>
+    );
 };

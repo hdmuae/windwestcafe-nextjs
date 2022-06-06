@@ -5,9 +5,14 @@ interface myProps {
   id: number;
   img: string;
   active: number;
+  name: string;
+  link: string;
+  aroma: string;
+  intensity: string;
+  description: string;
 }
 
-const Card: React.FC<myProps> = ({ id, active, img }) => {
+const Card: React.FC<myProps> = ({ id, active, img, name, link, aroma, intensity, description }) => {
   return (
     <div
       className={`${
@@ -35,7 +40,7 @@ const Card: React.FC<myProps> = ({ id, active, img }) => {
             active === id ? "text-white" : "text-primary"
           } mb-3 font-minion text-3xl font-bold`}
         >
-          Cafe Milo
+          Cafe Milo {name}
         </h2>
 
         <div className="mb-2 flex flex-col md:flex-row">
@@ -51,7 +56,7 @@ const Card: React.FC<myProps> = ({ id, active, img }) => {
                 active === id ? "text-white" : "text-primary"
               } ml-2 font-light`}
             >
-              AROMA 90%
+              AROMA {aroma}%
             </p>
           </div>
 
@@ -67,7 +72,7 @@ const Card: React.FC<myProps> = ({ id, active, img }) => {
                 active === id ? "text-white" : "text-primary"
               } ml-2 font-light`}
             >
-              INTENSITY 80%
+              INTENSITY {intensity}%
             </p>
           </div>
         </div>
@@ -77,9 +82,9 @@ const Card: React.FC<myProps> = ({ id, active, img }) => {
             active === id ? "text-white" : "text-primary"
           } mb-8 w-3/4 text-center font-light`}
         >
-          100% Arabica with a light, delicate taste. 1000 g pack of beans.
+          {description}
         </p>
-
+        <a href={link} target="_blank">
         <button
           className={`${
             active === id ? "bg-white" : "bg-primary text-white"
@@ -87,6 +92,7 @@ const Card: React.FC<myProps> = ({ id, active, img }) => {
         >
           Shop now
         </button>
+        </a>
       </div>
     </div>
   );

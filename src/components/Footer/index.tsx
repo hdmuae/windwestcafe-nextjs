@@ -64,25 +64,22 @@ const Footer: React.FC<{ dark: boolean }> = ({ dark }) => {
               Contact Information
             </h1>
             <a
-              href="tel:+123 4 567 890"
+              href="tel:+971 58 570 7333"
               className="pb-2 text-center hover:font-bold lg:text-left"
             >
-              +123 4 567 890
+              +971 58 570 7333
             </a>
             <a
-              href="tel:+123 4 567 890"
+              href="mailto:mariia@windwestcafe.com"
               className="pb-2 text-center hover:font-bold lg:text-left"
             >
-              +123 4 567 890
-            </a>
-            <a
-              href="mailto:info@mail.com"
-              className="pb-2 text-center hover:font-bold lg:text-left"
-            >
-              info@mail.com
+              mariia@windwestcafe.com
             </a>
             <p className="text-center hover:font-bold lg:text-left">
-              Address - Dubai - UAE
+              Dubai, UAE<br/>
+              Wind West Home<br/>
+              Barsha Heights Tecom<br/>
+              Al Rabeea’s 2 street
             </p>
           </div>
 
@@ -92,6 +89,7 @@ const Footer: React.FC<{ dark: boolean }> = ({ dark }) => {
               Social Media
             </h1>
             <div className="hidden justify-between lg:flex">
+              <a href="https://www.facebook.com/Wind-West-Cafe-106558092043333" target="_blank">
               <Image
                 className="cursor-pointer"
                 width="15"
@@ -99,7 +97,8 @@ const Footer: React.FC<{ dark: boolean }> = ({ dark }) => {
                 src="/svg/Facebook-white.svg"
                 alt="Facebook icon"
               />
-
+              </a>
+              <a href="https://www.instagram.com/windwestcafe/" target="_blank">
               <Image
                 width="15"
                 height="15"
@@ -107,6 +106,7 @@ const Footer: React.FC<{ dark: boolean }> = ({ dark }) => {
                 src="/svg/Instagram-white.svg"
                 alt="Instagram icon"
               />
+              </a>
               <Image
                 width="20"
                 height="20"
