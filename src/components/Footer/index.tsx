@@ -89,7 +89,7 @@ const Footer: React.FC<{ dark: boolean }> = ({ dark }) => {
               Social Media
             </h1>
             <div className="hidden justify-between lg:flex">
-              <a href="https://www.facebook.com/Wind-West-Cafe-106558092043333" target="_blank">
+              <a href="https://www.facebook.com/Wind-West-Cafe-106558092043333" target="_blank" rel="noreferrer">
               <Image
                 className="cursor-pointer"
                 width="15"
@@ -98,7 +98,7 @@ const Footer: React.FC<{ dark: boolean }> = ({ dark }) => {
                 alt="Facebook icon"
               />
               </a>
-              <a href="https://www.instagram.com/windwestcafe/" target="_blank">
+              <a href="https://www.instagram.com/windwestcafe/" target="_blank" rel="noreferrer">
               <Image
                 width="15"
                 height="15"

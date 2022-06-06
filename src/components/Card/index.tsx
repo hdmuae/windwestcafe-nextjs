@@ -84,7 +84,7 @@ const Card: React.FC<myProps> = ({ id, active, img, name, link, aroma, intensity
         >
           {description}
         </p>
-        <a href={link} target="_blank">
+        <a href={link} target="_blank" rel="noreferrer">
         <button
           className={`${
             active === id ? "bg-white" : "bg-primary text-white"
