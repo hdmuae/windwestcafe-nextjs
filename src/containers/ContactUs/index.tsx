@@ -56,7 +56,7 @@ export const ContactUs: React.FC = () => {
         <div className="grid grid-cols-1 gap-[20px] md:grid-cols-2 ">
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="m-auto mt-6 lg:m-0 lg:w-4/5"
+          className="m-auto mt-6 lg:m-0 lg:w-4/5 w-full"
         >
           <div className="mb-4">
             <input

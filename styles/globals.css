@@ -43,7 +43,14 @@
   max-height: 704px;
   overflow: scroll;
 }
-
+iframe {
+  max-width: 100%;
+}
+@media(max-width: 767px){
+  .scrollable_menu {
+    max-height: unset;
+  }
+}
 /* .parent {
   width: 400px;
   height: 400px;
