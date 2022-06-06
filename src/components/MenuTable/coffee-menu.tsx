@@ -44,77 +44,72 @@ class Coffee extends React.Component {
             <div className="m-auto w-11/12">
                 <MenuRecord
                     name="Espresso"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description=""
                     price={18}
                 />
                 <SubMenuRecord
                     name="Double"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description=""
                     price={22}
                 />
                 <SubMenuRecord
                     name="Freddo"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description=""
                     price={23}
                 />
                 <SubMenuRecord
                     name="Tonic"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description=""
                     price={27}
                 />
                 <MenuRecord
                     name="Americano"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description="With Milk, plant based milk"
                     price={18}
                 />
                 <MenuRecord
                     name="Cappuccino"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor"
+                    description="Plant based milk"
                     price={21}
                 />
                 <SubMenuRecord
                     name="Freddo"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description=""
                     price={24}
                 />
                 <MenuRecord
                     name="Late"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description="Plant based milk"
                     price={22}
                 />
                 <SubMenuRecord
                     name="Iced"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description=""
                     price={22}
                 />
                 <SubMenuRecord
                     name="Spanish"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description=""
                     price={26}
                 />
                 <SubMenuRecord
                     name="Vanilla"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description=""
                     price={24}
                 />
                 <MenuRecord
                     name="Flat White"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor"
+                    description="Plant based milk"
                     price={25}
                 />
                 <SubMenuRecord
                     name="Freddo"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description=""
                     price={27}
                 />
                 <MenuRecord
-                    name="Flat White"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor"
-                    price={25}
-                />
-                <MenuRecord
                     name="Cacao"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor"
+                    description="Dark chocolate, Hazelnut, Orange&Cinnamon, White chocolate, Coconut, Amaretto"
                     price={22}
                 />
             </div>

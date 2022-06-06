@@ -44,17 +44,17 @@ class Pastries extends React.Component {
             <div className="m-auto w-11/12">
                 <MenuRecord
                     name="Plain croissant"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description=""
                     price={12}
                 />
                 <MenuRecord
                     name="Cheese croissant"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description=""
                     price={20}
                 />
                 <MenuRecord
                     name="Chocolate croissant"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description=""
                     price={19}
                 />
             </div>

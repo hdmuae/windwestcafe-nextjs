@@ -44,22 +44,24 @@ class FilterCoffee extends React.Component {
             <div className="m-auto w-11/12">
                 <MenuRecord
                     name="Cold Brew"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description="Dripped coffee that has been brewed with cold rather hot water"
                     price={30}
                 />
                 <MenuRecord
                     name="Cascara Tonic"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description="Caffeinated, tea-like drink with a fruity flavour made from dried coffee cherries"
                     price={35}
                 />
                 <MenuRecord
                     name="Nitro"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description="It’s a variation of cold brewed coffee that used addition of nitrogen gas to create
+                    a smooth texture"
                     price={32}
                 />
                 <MenuRecord
                     name="V60"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description="The name stems from the shape of device. It is “V” shaped with angles of 60 degrees
+                    in which hot water passes through ground coffee in a special funnel with a paper filter"
                     price={32}
                 />
             </div>

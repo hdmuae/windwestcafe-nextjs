@@ -44,27 +44,27 @@ class FreshJuices extends React.Component {
             <div className="m-auto w-11/12">
                 <MenuRecord
                     name="Fresh Juices"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description=""
                     price={20}
                 />
                 <SubMenuRecord
                     name="Orange"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description=""
                     price={20}
                 />
                 <SubMenuRecord
                     name="Apple"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description=""
                     price={20}
                 />
                 <SubMenuRecord
                     name="Carrot"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description=""
                     price={20}
                 />
                 <SubMenuRecord
                     name="Pineapple"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    description=""
                     price={20}
                 />
             </div>

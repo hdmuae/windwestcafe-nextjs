@@ -43,13 +43,13 @@ class AvantchaTea extends React.Component {
         return (
             <div className="m-auto w-11/12">
                 <MenuRecord
-                    name="Avantcha Tea: (types will add soon)"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                    name="Avantcha Tea"
+                    description=""
                     price={20}
                 />
                 <SubMenuRecord
                     name="Iced Tea"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                    description=""
                     price={25}
                 />
             </div>
