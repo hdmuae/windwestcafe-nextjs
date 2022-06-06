@@ -53,9 +53,10 @@ export const ContactUs: React.FC = () => {
         <h1 className="mb-12 font-minion text-5xl font-bold text-white lg:text-title">
           Contact Us
         </h1>
+        <div className="grid grid-cols-1 gap-[20px] md:grid-cols-2 ">
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="m-auto mt-6 lg:m-0 lg:w-2/5"
+          className="m-auto mt-6 lg:m-0 lg:w-4/5"
         >
           <div className="mb-4">
             <input
@@ -94,6 +95,11 @@ export const ContactUs: React.FC = () => {
             Submit
           </button>
         </form>
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.044705348557!2d55.17650021448789!3d25.100347983941347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6ba659a5ad91%3A0x279d1db038a4a880!2sWind%20West%20Home!5e0!3m2!1sru!2sua!4v1654478061047!5m2!1sru!2sua"
+              width="600" height="450" style={{border:0}} allowFullScreen="" loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <ToastContainer />
       </div>
 
