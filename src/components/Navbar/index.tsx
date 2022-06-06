@@ -88,7 +88,7 @@ const Nav: React.FC<myProps> = ({ fixed, bg, menu, setMenu }) => {
             </div>
           )}
 
-          <a className="mr-8 hidden lg:block" href="#">
+          <a className="mr-8 hidden lg:block" href="https://www.facebook.com/Wind-West-Cafe-106558092043333">
             <Image
               width="15"
               height="15"
@@ -97,7 +97,7 @@ const Nav: React.FC<myProps> = ({ fixed, bg, menu, setMenu }) => {
             />
           </a>
 
-          <a className="mr-8 hidden lg:block" href="#">
+          <a className="mr-8 hidden lg:block" href="https://www.instagram.com/windwestcafe/">
             <Image
               width="15"
               height="15"
