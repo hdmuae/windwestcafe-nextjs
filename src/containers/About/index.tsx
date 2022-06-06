@@ -38,7 +38,7 @@ export const About: React.FC = () => {
         <p className="z-10 w-full font-nexa text-lg text-white lg:w-8/12 mb-6 hidden">
           We are the first coffee shop in Dubai where you can try Dersut espresso and other traditional Italian coffee drinks in company with your 
           favorite desserts and handmade chocolate. Moreover we are official distributor of Dersut in UAE, the selection of products you can find 
-          in our <a href="#">Shop</a>.
+          in our <a href="https://www.dersut.ae/collections" target="_blank" rel="noreferrer" className="underline">Shop</a>.
         </p>
         <button className="bg-white rounded-lg py-2 px-8 font-nexa lg:w-8/12 read_more hidden_text">Read More</button>
       </div>

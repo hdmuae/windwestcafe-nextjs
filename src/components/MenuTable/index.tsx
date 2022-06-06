@@ -141,6 +141,7 @@ const Menu: React.FC = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+
       </div>
 
       <div className="m-auto w-11/12 scrollable_menu">

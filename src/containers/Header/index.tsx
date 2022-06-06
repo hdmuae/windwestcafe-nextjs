@@ -61,6 +61,7 @@ export const Header: React.FC = () => {
             Wind West Cafe!
           </h1>
           <div className="m-auto mt-20 flex w-1/2 justify-between lg:hidden">
+            <a href="https://www.facebook.com/Wind-West-Cafe-106558092043333">
             <Image
               className="cursor-pointer"
               width={32}
@@ -68,6 +69,8 @@ export const Header: React.FC = () => {
               src="/svg/fb.svg"
               alt="Facebook icon"
             />
+            </a>
+            <a href="https://www.instagram.com/windwestcafe/">
             <Image
               className="cursor-pointer"
               width={32}
@@ -75,6 +78,7 @@ export const Header: React.FC = () => {
               src="/svg/inst.svg"
               alt="Instagram icon"
             />
+            </a>
             <Image
               className="cursor-pointer"
               width={32}
@@ -122,6 +126,7 @@ export const Header: React.FC = () => {
           </a>
 
           <div className="flex w-48 justify-between">
+            <a href="https://www.facebook.com/Wind-West-Cafe-106558092043333">
             <Image
               className="cursor-pointer"
               width={20}
@@ -129,6 +134,8 @@ export const Header: React.FC = () => {
               src="/svg/Facebook-white.svg"
               alt="Facebook icon"
             />
+            </a>
+            <a href="https://www.instagram.com/windwestcafe/">
             <Image
               className="cursor-pointer"
               width={20}
@@ -136,6 +143,7 @@ export const Header: React.FC = () => {
               src="/svg/Instagram-white.svg"
               alt="Instagram icon"
             />
+            </a>
             <Image
               className="cursor-pointer"
               width={20}

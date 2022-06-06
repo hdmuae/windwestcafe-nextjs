@@ -23,8 +23,8 @@ const Card: React.FC<myProps> = ({ id, active, img, name, link, aroma, intensity
     >
       <div className="translate-y-4 duration-500">
         <Image
-          width={active === id ? 210 : 150}
-          height={active === id ? 350 : 240}
+          width={active === id ? 350 : 250}
+          height={active === id ? 350 : 250}
           alt="Product img"
           src={img}
         />
@@ -33,14 +33,14 @@ const Card: React.FC<myProps> = ({ id, active, img, name, link, aroma, intensity
       <div
         className={`${
           active === id ? "translate-y-4" : ""
-        } flex flex-col items-center justify-center`}
+        } flex flex-col items-center px-5 justify-center`}
       >
         <h2
           className={` ${
             active === id ? "text-white" : "text-primary"
-          } mb-3 font-minion text-3xl font-bold`}
+          } mb-3 font-minion text-2xl text-center font-bold`}
         >
-          Cafe Milo {name}
+          {name}
         </h2>
 
         <div className="mb-2 flex flex-col md:flex-row">

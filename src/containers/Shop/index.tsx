@@ -66,12 +66,13 @@ export const Shop: React.FC = () => {
                                 <Card
                                     id={idx}
                                     active={isActive ? idx : -1}
-                                    img="/images/image_coffee.png"
-                                    name="test name"
-                                    aroma="90"
+                                    img="/images/non_plus.png"
+                                    name="NON PLUS ULTRA"
+                                    aroma="100"
                                     intensity="70"
-                                    description="100% Arabica with a light, delicate taste. 1000 g pack of beans."
-                                    link="https://google.com"
+                                    description="A blend of the most precious, select single varietals of 100%
+                                    natural washed Arabica coffee."
+                                    link="https://www.dersut.ae/products/non-plus-ultra"
                                 />
                             )}
                         </SwiperSlide>
@@ -82,12 +83,13 @@ export const Shop: React.FC = () => {
                                 <Card
                                     id={idx}
                                     active={isActive ? idx : -1}
-                                    img="/images/9.png"
-                                    name="test name"
+                                    img="/images/oro.png"
+                                    name="ORO"
                                     aroma="90"
-                                    intensity="70"
-                                    description="100% Arabica with a light, delicate taste. 1000 g pack of beans."
-                                    link="https://google2.com"
+                                    intensity="90"
+                                    description="A perfect morning blend, harmonious yet rich in body and flavour.
+                                    Its aroma brings floral, fruity notes."
+                                    link="https://www.dersut.ae/products/oro"
                                 />
                             )}
                         </SwiperSlide>
@@ -98,12 +100,61 @@ export const Shop: React.FC = () => {
                                 <Card
                                     id={idx}
                                     active={isActive ? idx : -1}
-                                    img="/images/3.png"
-                                    name="test name"
+                                    img="/images/santos.png"
+                                    name="SANTOS SINGLE-ORIGIN COFFEE"
                                     aroma="90"
-                                    intensity="70"
-                                    description="100% Arabica with a light, delicate taste. 1000 g pack of beans."
-                                    link="https://google3.com"
+                                    intensity="80"
+                                    description="A perfect after-lunch coffee with a smooth, full aroma, leading into
+                                    a chocolate aftertaste. "
+                                    link="https://www.dersut.ae/products/santos-single-origin-coffee"
+                                />
+                            )}
+                        </SwiperSlide>
+                    ))}
+                    {[3].map((idx, key) => (
+                        <SwiperSlide key={key}>
+                            {({isActive}) => (
+                                <Card
+                                    id={idx}
+                                    active={isActive ? idx : -1}
+                                    img="/images/blu.png"
+                                    name="BLU"
+                                    aroma="85"
+                                    intensity="90"
+                                    description="Full body and rounded intensity, with pleasant cocoa notes."
+                                    link="https://www.dersut.ae/products/blu"
+                                />
+                            )}
+                        </SwiperSlide>
+                    ))}
+                    {[4].map((idx, key) => (
+                        <SwiperSlide key={key}>
+                            {({isActive}) => (
+                                <Card
+                                    id={idx}
+                                    active={isActive ? idx : -1}
+                                    img="/images/limu.png"
+                                    name="LIMU SINGLE-ORIGIN COFFEE"
+                                    aroma="100"
+                                    intensity="85"
+                                    description="Bitterness, acidity and sweetness with its jasmine and citrus notes."
+                                    link="https://www.dersut.ae/products/limu-single-origin-coffee"
+                                />
+                            )}
+                        </SwiperSlide>
+                    ))}
+                    {[4].map((idx, key) => (
+                        <SwiperSlide key={key}>
+                            {({isActive}) => (
+                                <Card
+                                    id={idx}
+                                    active={isActive ? idx : -1}
+                                    img="/images/decalight.png"
+                                    name="DECALIGHT"
+                                    aroma="70"
+                                    intensity="30"
+                                    description="Full-flavoured, high digestibility dewaxed decaffeinated coffee."
+                                    link="https://www.dersut.ae/products/decalight-coffee-beans-waxed"
                                 />
                             )}
                         </SwiperSlide>
