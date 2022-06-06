@@ -45,12 +45,6 @@ const Footer: React.FC<{ dark: boolean }> = ({ dark }) => {
             <h1 className="mb-3 text-center text-lg font-bold lg:text-left">
               More Information
             </h1>
-            <Link href="">
-              <a className="pb-2 text-center hover:font-bold lg:text-left">
-                Careers
-              </a>
-            </Link>
-
             <Link href="/termsandconditions" passHref>
               <a className="text-center hover:font-bold lg:text-left">
                 Terms and Conditions
