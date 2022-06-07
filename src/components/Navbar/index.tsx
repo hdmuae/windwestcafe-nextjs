@@ -66,7 +66,27 @@ const Nav: React.FC<myProps> = ({ fixed, bg, menu, setMenu }) => {
         </div>
 
         <div className="flex w-1/4 items-center justify-end text-white">
-          {/*{!menu && (*/}
+          {!menu && (
+              <div onClick={() => setMenu!(!menu)} className="lg:hidden">
+                <Image
+                    width="15"
+                    height="15"
+                    src="/svg/menu-icon.svg"
+                    alt="Burger menu icon"
+                />
+              </div>
+          )}
+          {menu && (
+              <div onClick={() => setMenu!(!menu)} className="lg:hidden">
+                <Image
+                    src="/svg/close.svg"
+                    width="15"
+                    height="15"
+                    alt="Close burger menu icon"
+                />
+              </div>
+          )}
+          {/*{!menu && (}
             {/*<div onClick={() => setMenu!(!menu)} className="lg:hidden">*/}
               {/*<Image*/}
                 {/*width="15"*/}
