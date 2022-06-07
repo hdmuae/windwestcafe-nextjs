@@ -38,7 +38,7 @@ const Card: React.FC<myProps> = ({ id, active, img, name, link, aroma, intensity
         <h2
           className={` ${
             active === id ? "text-white" : "text-primary"
-          } mb-3 font-minion text-2xl text-center font-bold`}
+          } mb-3 font-minion text-xl text-center md:text-2xl font-bold`}
         >
           {name}
         </h2>
@@ -80,7 +80,7 @@ const Card: React.FC<myProps> = ({ id, active, img, name, link, aroma, intensity
         <p
           className={` ${
             active === id ? "text-white" : "text-primary"
-          } mb-8 w-3/4 text-center font-light`}
+          } mb-8 w-full text-center md:w-3/4 font-light`}
         >
           {description}
         </p>
