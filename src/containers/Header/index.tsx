@@ -46,6 +46,7 @@ export const Header: React.FC = () => {
         loop
         muted
         id="header video"
+        playsinline
       >
         <source src="/video/ocean.mp4" type="video/mp4" />
       </video>
