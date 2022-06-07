@@ -35,7 +35,7 @@ export const ContactUs: React.FC = () => {
         "service_m9x0oik",
         "template_z3zmvkb",
         templateParams,
-        "user_bDIEmwy6qfjsQW9OkuxdP"
+          "user_bDIEmwy6qfjsQW9OkuxdP",
       );
       reset();
       toastifySuccess();
