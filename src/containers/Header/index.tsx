@@ -43,6 +43,7 @@ export const Header: React.FC = () => {
           menu ? "hidden" : "block"
         } absolute top-0 left-0 right-0 bottom-0 h-full object-cover lg:h-auto`}
         autoPlay
+        playsInline
         loop
         muted
         id="header video"
