@@ -46,6 +46,12 @@
 iframe {
   max-width: 100%;
 }
+.chidden {
+  display: none;
+}
+.cvisible {
+  display: block;
+}
 @media(max-width: 767px){
   .scrollable_menu {
     max-height: unset;
