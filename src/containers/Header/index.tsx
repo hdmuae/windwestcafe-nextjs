@@ -61,7 +61,7 @@ export const Header: React.FC = () => {
             Wind West Cafe!
           </h1>
           <div className="m-auto mt-20 flex w-1/2 justify-between lg:hidden">
-            <a href="https://www.facebook.com/Wind-West-Cafe-106558092043333">
+            <a href="https://www.facebook.com/Wind-West-Cafe-106558092043333" target="_blank" rel="noreferrer">
             <Image
               className="cursor-pointer"
               width={32}
@@ -70,7 +70,7 @@ export const Header: React.FC = () => {
               alt="Facebook icon"
             />
             </a>
-            <a href="https://www.instagram.com/windwestcafe/">
+            <a href="https://www.instagram.com/windwestcafe/" target="_blank" rel="noreferrer">
             <Image
               className="cursor-pointer"
               width={32}
@@ -126,7 +126,7 @@ export const Header: React.FC = () => {
           </a>
 
           <div className="flex w-48 justify-between">
-            <a href="https://www.facebook.com/Wind-West-Cafe-106558092043333">
+            <a href="https://www.facebook.com/Wind-West-Cafe-106558092043333" target="_blank" rel="noreferrer">
             <Image
               className="cursor-pointer"
               width={20}
@@ -135,7 +135,7 @@ export const Header: React.FC = () => {
               alt="Facebook icon"
             />
             </a>
-            <a href="https://www.instagram.com/windwestcafe/">
+            <a href="https://www.instagram.com/windwestcafe/" target="_blank" rel="noreferrer">
             <Image
               className="cursor-pointer"
               width={20}

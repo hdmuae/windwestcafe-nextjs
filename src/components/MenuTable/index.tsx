@@ -66,27 +66,27 @@ const Menu: React.FC = () => {
   );
   const [active, setActive] = useState("COFFEE");
   return (
-    <div className="flex flex-col lg:flex-row">
-      <div className="mr-12 hidden w-1/4 flex-col justify-around rounded-3xl bg-primary py-16 px-12 md:flex">
-        <h1 onClick={() => setActive("COFFEE")} className="mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+    <div className="flex flex-col md:flex-row">
+      <div className="mr-12 hidden w-1/4 flex-col justify-around rounded-3xl bg-primary py-16 px-12 md:flex md:w-3/12 md:px-8 lg:px-12">
+        <h1 onClick={() => setActive("COFFEE")} className="mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 md:text-[18px] lg:text-[32px]">
           COFFEE
         </h1>
-        <h1 onClick={() => setActive("FILTER COFFEE")} className="text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+        <h1 onClick={() => setActive("FILTER COFFEE")} className="text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 md:text-[18px] lg:text-[32px]">
           FILTER COFFEE
         </h1>
-        <h1 onClick={() => setActive("COCKTAILS")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+        <h1 onClick={() => setActive("COCKTAILS")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 md:text-[18px] lg:text-[32px]">
           DERSUT SPECIAL COCKTAILS
         </h1>
-        <h1 onClick={() => setActive("AVANtCHA TEA")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+        <h1 onClick={() => setActive("AVANTCHA TEA")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 md:text-[18px] lg:text-[32px]">
           AVANTCHA TEA
         </h1>
-        <h1 onClick={() => setActive("FRESH JUICES")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+        <h1 onClick={() => setActive("FRESH JUICES")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 md:text-[18px] lg:text-[32px]">
           FRESH JUICES
         </h1>
-        <h1 onClick={() => setActive("SMOOTHIES")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+        <h1 onClick={() => setActive("SMOOTHIES")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 md:text-[18px] lg:text-[32px]">
           SMOOTHIES
         </h1>
-        <h1 onClick={() => setActive("PASTRIES")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+        <h1 onClick={() => setActive("PASTRIES")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 md:text-[18px] lg:text-[32px]">
           PASTRIES
         </h1>
         {/*<h1 className="hover:text-underline mb-0 cursor-pointer font-minion text-xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">*/}
@@ -144,7 +144,7 @@ const Menu: React.FC = () => {
 
       </div>
 
-      <div className="m-auto w-11/12 scrollable_menu">
+      <div className="m-auto w-11/12 scrollable_menu md:w-9/12">
         {active === "COFFEE" && <Coffee/>}
         {active === "FILTER COFFEE" && <FilterCoffee/>}
         {active === "COCKTAILS" && <SpecialCoctails/>}
