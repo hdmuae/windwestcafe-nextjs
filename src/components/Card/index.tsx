@@ -38,7 +38,7 @@ const Card: React.FC<myProps> = ({ id, active, img, name, link, aroma, intensity
         <h2
           className={` ${
             active === id ? "text-white" : "text-primary"
-          } mb-3 font-minion text-l text-center md:text-2xl font-bold`}
+          } mb-3 font-minion text-xl text-center md:text-2xl font-bold`}
         >
           {name}
         </h2>
