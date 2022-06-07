@@ -16,8 +16,8 @@ const Menu: React.FC = () => {
 
   const [category, setCategory] = React.useState(0);
 
-  const categories = ["Coffee", "FILTER COFFEE", "SPECIAL COCKTAILS", "AVANTCHA TEA", "FRESH JUICES",
-    "SMOOTHIES", "Pastries"];
+  const categories = ["FILTER COFFEE", "COFFEE", "COCKTAILS", "AVANTCHA TEA", "FRESH JUICES",
+    "SMOOTHIES", "PASTRIES"];
   const editCategory = (change: boolean) => {
     if (change) {
       category === 3 ? setCategory(0) : setCategory(category + 1);
@@ -64,29 +64,29 @@ const Menu: React.FC = () => {
         </div>
       </div>
   );
-  const [active, setActive] = useState("Coffee");
+  const [active, setActive] = useState("COFFEE");
   return (
     <div className="flex flex-col lg:flex-row">
       <div className="mr-12 hidden w-1/4 flex-col justify-around rounded-3xl bg-primary py-16 px-12 md:flex">
-        <h1 onClick={() => setActive("Coffee")} className="mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+        <h1 onClick={() => setActive("COFFEE")} className="mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
           COFFEE
         </h1>
-        <h1 onClick={() => setActive("FilterCoffee")} className="text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+        <h1 onClick={() => setActive("FILTER COFFEE")} className="text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
           FILTER COFFEE
         </h1>
-        <h1 onClick={() => setActive("SpecialCoctails")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+        <h1 onClick={() => setActive("COCKTAILS")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
           DERSUT SPECIAL COCKTAILS
         </h1>
-        <h1 onClick={() => setActive("AvantchaTea")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+        <h1 onClick={() => setActive("AVANtCHA TEA")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
           AVANTCHA TEA
         </h1>
-        <h1 onClick={() => setActive("FreshJuices")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+        <h1 onClick={() => setActive("FRESH JUICES")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
           FRESH JUICES
         </h1>
-        <h1 onClick={() => setActive("Smoothies")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+        <h1 onClick={() => setActive("SMOOTHIES")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
           SMOOTHIES
         </h1>
-        <h1 onClick={() => setActive("Pastries")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
+        <h1 onClick={() => setActive("PASTRIES")} className="hover:text-underline mb-0 cursor-pointer font-minion text-2xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">
           PASTRIES
         </h1>
         {/*<h1 className="hover:text-underline mb-0 cursor-pointer font-minion text-xl font-bold text-white decoration-1 hover:underline lg:mb-8 lg:text-[32px]">*/}
@@ -145,13 +145,13 @@ const Menu: React.FC = () => {
       </div>
 
       <div className="m-auto w-11/12 scrollable_menu">
-        {active === "Coffee" && <Coffee/>}
-        {active === "FilterCoffee" && <FilterCoffee/>}
-        {active === "SpecialCoctails" && <SpecialCoctails/>}
-        {active === "AvantchaTea" && <AvantchaTea/>}
-        {active === "FreshJuices" && <FreshJuices/>}
-        {active === "Smoothies" && <Smoothies/>}
-        {active === "Pastries" && <Pastries/>}
+        {active === "COFFEE" && <Coffee/>}
+        {active === "FILTER COFFEE" && <FilterCoffee/>}
+        {active === "COCKTAILS" && <SpecialCoctails/>}
+        {active === "AVANTCHA TEA" && <AvantchaTea/>}
+        {active === "FRESH JUICES" && <FreshJuices/>}
+        {active === "SMOOTHIES" && <Smoothies/>}
+        {active === "PASTRIES" && <Pastries/>}
       </div>
     </div>
   );
