@@ -32,10 +32,10 @@ export const ContactUs: React.FC = () => {
         message,
       };
       await emailjs.send(
-        "service_m9x0oik",
-        "template_z3zmvkb",
+        "service_at0hrzr",
+        "template_sr1ek0b",
         templateParams,
-          "user_bDIEmwy6qfjsQW9OkuxdP",
+          "69hyjGv89pp0-XzlZ",
       );
       reset();
       toastifySuccess();
