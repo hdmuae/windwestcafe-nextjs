@@ -126,7 +126,7 @@ const Nav: React.FC<myProps> = ({ fixed, bg, menu, setMenu }) => {
             />
           </a>
 
-          <a className="hidden lg:block" href="#">
+          <a className="hidden lg:block" href="https://www.tripadvisor.com/Restaurant_Review-g295424-d24102906-Reviews-Wind_West_Cafe-Dubai_Emirate_of_Dubai.html" target="_blank" rel="noreferrer">
             <Image
               width="15"
               height="15"

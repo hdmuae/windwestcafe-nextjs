@@ -80,6 +80,7 @@ export const Header: React.FC = () => {
               alt="Instagram icon"
             />
             </a>
+            <a href="https://www.tripadvisor.com/Restaurant_Review-g295424-d24102906-Reviews-Wind_West_Cafe-Dubai_Emirate_of_Dubai.html" target="_blank" rel="noreferrer">
             <Image
               className="cursor-pointer"
               width={32}
@@ -87,6 +88,7 @@ export const Header: React.FC = () => {
               src="/svg/ta.svg"
               alt="Tripadvisor icon"
             />
+            </a>
           </div>
         </div>
 
@@ -145,6 +147,7 @@ export const Header: React.FC = () => {
               alt="Instagram icon"
             />
             </a>
+            <a href="https://www.tripadvisor.com/Restaurant_Review-g295424-d24102906-Reviews-Wind_West_Cafe-Dubai_Emirate_of_Dubai.html" target="_blank" rel="noreferrer">
             <Image
               className="cursor-pointer"
               width={20}
@@ -152,6 +155,7 @@ export const Header: React.FC = () => {
               src="/svg/Tripadvisor-white.svg"
               alt="Tripadvisor icon"
             />
+            </a>
           </div>
         </div>
       </div>
