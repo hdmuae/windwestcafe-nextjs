@@ -101,6 +101,7 @@ const Footer: React.FC<{ dark: boolean }> = ({ dark }) => {
                 alt="Instagram icon"
               />
               </a>
+              <a href="https://www.tripadvisor.com/Restaurant_Review-g295424-d24102906-Reviews-Wind_West_Cafe-Dubai_Emirate_of_Dubai.html" target="_blank" rel="noreferrer">
               <Image
                 width="20"
                 height="20"
@@ -108,17 +109,18 @@ const Footer: React.FC<{ dark: boolean }> = ({ dark }) => {
                 src="/svg/Tripadvisor-white.svg"
                 alt="Tripadvisor icon"
               />
+              </a>
             </div>
 
             <div className="flex flex-col justify-between lg:hidden">
-              <a className="pb-2 text-center hover:font-bold lg:text-left">
+              <a className="pb-2 text-center hover:font-bold lg:text-left" href="https://www.facebook.com/Wind-West-Cafe-106558092043333" target="_blank" rel="noreferrer">
                 Facebook
               </a>
-              <a className="pb-2 text-center hover:font-bold lg:text-left">
-                Twitter
-              </a>
-              <a className="pb-2 text-center hover:font-bold lg:text-left">
+              <a className="pb-2 text-center hover:font-bold lg:text-left" href="https://www.instagram.com/windwestcafe/" target="_blank" rel="noreferrer">
                 Instagram
+              </a>
+              <a className="pb-2 text-center hover:font-bold lg:text-left" href="https://www.tripadvisor.com/Restaurant_Review-g295424-d24102906-Reviews-Wind_West_Cafe-Dubai_Emirate_of_Dubai.html" target="_blank" rel="noreferrer">
+                Tripadvisor
               </a>
             </div>
           </div>
