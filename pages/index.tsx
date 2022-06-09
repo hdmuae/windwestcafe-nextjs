@@ -1,8 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import dynamic from 'next/dynamic'
+
+const Shop = dynamic(() => import('../src/containers/Shop'), { ssr: false });
 import {
   Menu,
-  Shop,
+  //Shop,
   Header,
   Gallery,
   About,

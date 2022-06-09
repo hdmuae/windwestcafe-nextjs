@@ -6,10 +6,10 @@ interface myProps {
   img: string;
   active: number;
   name: string;
-  link: string;
   aroma: string;
   intensity: string;
   description: string;
+  link: string;
 }
 
 const Card: React.FC<myProps> = ({ id, active, img, name, link, aroma, intensity, description }) => {
