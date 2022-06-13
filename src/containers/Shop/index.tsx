@@ -69,7 +69,7 @@ const Shop: React.FC = () => {
                 <Swiper
                     style={{overflow: "visible"}}
                     loop={true}
-                    initialSlide={1}
+                    initialSlide={2}
                     slidesPerView={3}
                     centeredSlides={true}
                     navigation={true}
