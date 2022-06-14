@@ -52,6 +52,11 @@ iframe {
 .cvisible {
   display: block;
 }
+#welcome.bg-primary {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
 @media(max-width: 767px){
   .scrollable_menu {
     max-height: unset;
