@@ -45,12 +45,12 @@ class Coffee extends React.Component {
                 <MenuRecord
                     name="Espresso"
                     description=""
-                    price={18}
+                    price={20}
                 />
                 <SubMenuRecord
                     name="Double"
                     description=""
-                    price={22}
+                    price={23}
                 />
                 <SubMenuRecord
                     name="Freddo"
@@ -60,7 +60,7 @@ class Coffee extends React.Component {
                 <SubMenuRecord
                     name="Tonic"
                     description=""
-                    price={27}
+                    price={30}
                 />
                 <MenuRecord
                     name="Americano"
